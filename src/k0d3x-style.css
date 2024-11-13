@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Header Styles */
@@ -31,9 +31,16 @@ h1 {
 
 /* Banner Image Style */
 .banner-image {
-  width: 80%; /* Full width to match the title */
+  width: 80%; /* width to match text */
   height: auto;
   margin: 20px 0;
+}
+
+/* Step Image Style */
+.step-image {
+  width: 90%; /* width to match text */
+  height: auto;
+  margin: 10px 45px;
 }
 
 /* Share Button Styles */
@@ -109,7 +116,7 @@ main {
 
 .step-number {
   border: 3px solid #ffc1c1;
-  background-color: #E84142; /* Light red */
+  background-color: #E84142; /* Avalanche red */
   padding: 5px 10px;
   margin-right: 8px;
   border-radius: 15px;
@@ -139,7 +146,7 @@ main {
 
 .sub-step-number {
   border: 3px solid #ffc1c1; /* Light red border */
-  background-color: #E84142; /* Avalanche red background */
+  background-color: #E84142; /* Avalanche red */
   padding: 5px 10px;
   margin-right: 8px;
   border-radius: 15px;
@@ -164,4 +171,13 @@ h2, h3 {
 
 p, img {
   margin: 10px 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
