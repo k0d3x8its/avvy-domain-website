@@ -1,0 +1,167 @@
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff; /* Contrast color for text */
+  background-color: #3a3a3a; /* Slightly darker gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Banner Image Style */
+.banner-image {
+  width: 80%; /* Full width to match the title */
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Share Button Styles */
+.share-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #E84142; /* Contrasts with Avalanche red */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.share-button:hover {
+  background-color: #ff0000;
+}
+
+.share-button:active {
+  background-color: #777;
+}
+
+/* Table of Contents Container */
+.toc-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav {
+  text-align: left;
+  width: 50%;
+  margin: 20px 0;
+}
+
+nav h2 {
+  font-size: 1.2em;
+  color: #E84142; /* Avalanche red */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: #E84142; /* Avalanche red */
+  text-decoration: none;
+}
+
+/* Main Content Container */
+main {
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+  margin: 20px 0;
+}
+
+/* Main Step Header */
+.step-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.step-number {
+  border: 3px solid #ffc1c1;
+  background-color: #E84142; /* Light red */
+  padding: 5px 10px;
+  margin-right: 8px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.step-title {
+  color: #E84142;
+}
+
+/* Indented Content Container for Each Step */
+.content-container {
+  margin-left: 30px;
+  padding: 10px 0;
+}
+
+/* Sub-Step Header with Updated Colors */
+.sub-step-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.sub-step-number {
+  border: 3px solid #ffc1c1; /* Light red border */
+  background-color: #E84142; /* Avalanche red background */
+  padding: 5px 10px;
+  margin-right: 8px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff; /* White text for contrast */
+}
+
+.sub-step-title {
+  color: #E84142;
+}
+
+/* Nested Content for Sub-Steps with Additional Indentation */
+.sub-step-content {
+  margin-left: 45px;
+}
+
+/* Additional Content Styling */
+h2, h3 {
+  color: #E84142;
+}
+
+p, img {
+  margin: 10px 0;
+}
