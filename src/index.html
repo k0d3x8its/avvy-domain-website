@@ -38,8 +38,7 @@
     <!-- Introduction Section -->
     <section id="intro">
       <h2>Introduction</h2>
-      <p>In this tutorial you'll learn how to seamlessly create, deploy, and configure a decentralized webstie using GrapesJS, Fleek, GitHub, and Avvy Domains. Avvy Domains provides an address naming system on the Avalanche blockchain which allows you to link your .avax domain to IPFS-hosted content. This ensures your website remians censorship-resistant an decentralized. We'll help you set up an account with GrapesJS, and guide you through GitHub for a seamless deployment to Fleek. Finally, we'll configure your Avvy Domain to point uour IPFS content. By the end of this tutorial you'll have a fully functional decentralized website accessible via your .avax domain.</p>
-      
+      <p class="sub-step-content">In this tutorial you'll learn how to seamlessly create, deploy, and configure a decentralized webstie using GrapesJS, Fleek, GitHub, and Avvy Domains. Avvy Domains provides an address naming system on the Avalanche blockchain which allows you to link your .avax domain to IPFS-hosted content. This ensures your website remians censorship-resistant an decentralized. We'll help you set up an account with GrapesJS, and guide you through GitHub for a seamless deployment to Fleek. Finally, we'll configure your Avvy Domain to point uour IPFS content. By the end of this tutorial you'll have a fully functional decentralized website accessible via your .avax domain.</p>
     </section>
 
     <!-- Step 0 Example -->
@@ -54,15 +53,16 @@
         <p class="sub-step-content">Before starting, ensure you have the following:</p>
         <ol class="sub-step-content">
           <li>An Avvy domain registered (e.g., mydomain.avax)</li>
-          <ol class="sub-step-content" type="a">
-            <li><a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a></li>
-          </ol>
+            <ol class="sub-step-content" type="a">
+              <li><a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a></li>
+            </ol>
             
           <li>Basic HTML/CSS knowledge</li>
           <li>A Core wallet or another EVM-compatible wallet</li>
         </ol>
       </div>
     </section>
+  <hr>
 
     <!-- Step 1 Example -->
     <section id="grapesjs">
@@ -74,23 +74,42 @@
       <!-- Content Container for Step 1 -->
       <div class="content-container">
         <div class="sub-step-header">
-          <span class="sub-step-number">1.1</span>
           <h3 class="sub-step-title">GrapesJS Introduction</h3>
         </div>
-        <p class="sub-step-content">GrapesJS is a web-based, open-source tool that simplifies website building with a drag-and-drop interface. It’s great for creating web pages visually without coding knowledge.</p>
+        <p class="sub-step-content">GrapesJS is a web-based, open-source tool designed to make website building easy for everyone, even those without coding knowledge. It offers a user-friendly, drag-and-drop interface where you can create and customize websites by simply dragging elements like text, images, and buttons onto your page. Think of it like a digital canvas where you can visually design and arrange your content, much like using a graphic design tool but for building web pages. GrapesJS provides a variety of pre-built components and templates, allowing you to create professional-looking websites without needing to write a single line of code.</p>
 
         <div class="sub-step-header">
-          <span class="sub-step-number">1.2</span>
+          <span class="sub-step-number">1.1</span>
           <h3 class="sub-step-title">Set up GrapesJS</h3>
         </div>
         <p class="sub-step-content">To start with GrapesJS:</p>
         <ol class="sub-step-content">
-          <li>Go to <a href="https://grapesjs.com" target="_blank">grapesjs.com</a></li>
-          <li>Click “Webpage Demo” to access the editor</li>
-          <li>Design your website using drag-and-drop components</li>
+          <li class="sub-step-content">Go to <a href="https://grapesjs.com" target="_blank">grapesjs.com</a></li>
+          <li class="sub-step-content">Click on the <b>“Webpage Demo”</b> button to start the GrapesJS editor.</li>
+          <img  src="assets/Step1.1.2.jpeg" alt="grapeJS demo button" class="step-image">
+          <li class="sub-step-content">Design your website using the drag-and-drop interface.</li>
+          <img  src="assets/Step1.1.3.jpeg" alt="grapeJS UI/UX" class="step-image">
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">1.2</span>
+          <h3 class="sub-step-title">Download the Website</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Once you have completed your design, click on the <b>“&lt;/&gt;”</b> button in the menu bar at the top of the screen.</li>
+          <img  src="assets/Step1.2.1.jpeg" alt="grapeJS UI/UX" class="step-image">
+          <li class="sub-step-content">In the window that displays you can select <b>"Export to ZIP"</b>, in the bottom left corner of the window, to download your website files.</li>
+          <img  src="assets/Step1.2.2.jpeg" alt="grapeJS export file" class="step-image">
+          <li class="sub-step-content">Find the zip file you just downloaded in your file system (Windows Explorer, Finder, etc) and open it to reveal your HTML and CSS files.</li>
+      
+          <li class="sub-step-content">Create a folder (these are called directories in GitHub) called <b>“src”</b> and put the “index.html” file and CSS folder from <b><u>1.2.3</u></b> into that <b>“src”</b> folder. Your folder structure should mimic the image below.</li>
+            <ol class="sub-step-content" type="a">
+              <li class="sub-step-content">Folder structure example</li>
+              <img  src="assets/Step1.2.4.a.jpeg" alt="grapeJS export file" class="step-image">
+            </ol>
         </ol>
       </div>
     </section>
+    <hr>
 
     <!-- Step 2 Example -->
     <section id="github">
@@ -122,6 +141,7 @@
         </ol>
       </div>
     </section>
+    <hr>
 
     <!-- Step 3 Example -->
     <section id="fleek">
@@ -144,6 +164,7 @@
         </ol>
       </div>
     </section>
+    <hr>
 
     <!-- Step 4 Example -->
     <section id="avvy">
@@ -162,6 +183,7 @@
         </ol>
       </div>
     </section>
+    <hr>
 
     <!-- Step 5 Example -->
     <section id="deploy">
