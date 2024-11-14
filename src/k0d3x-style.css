@@ -31,7 +31,7 @@ h1 {
 
 /* Banner Image Style */
 .banner-image {
-  width: 65%; /* width to match text */
+  width: 80%; /* width to match text */
   height: auto;
   margin: 20px 0;
 }
@@ -71,6 +71,12 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.toc {
+  display: flex;
+  width: 100%;
+  padding-left: 15%;
 }
 
 nav {
