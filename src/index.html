@@ -18,7 +18,8 @@
   <img src="assets/avvy-site-banner.PNG" alt=".avax site banner" class="banner-image">
 
   <!-- Table of Contents Container -->
-  <div class="toc-container">
+  <div class="toc">
+    <div class="toc-container">
     <nav>
       <h2>Table of Contents</h2>
       <ul>
@@ -31,6 +32,7 @@
         <li><a href="#deploy">Step 5: Deploy .avax Domain</a></li>
       </ul>
     </nav>
+    </div>
   </div>
 
   <!-- Main Content -->
@@ -51,15 +53,14 @@
 
       <!-- Content Container for Step 0 -->
       <div class="content-container">
-        <p class="sub-step-content">Before starting, ensure you have the following:</p>
-        <ol class="sub-step-content">
-          <li>An Avvy domain registered (e.g., mydomain.avax)</li>
+        <ol>
+          <li class="sub-step-content">An Avvy domain registered (e.g., mydomain.avax)</li>
             <ol class="sub-step-content" type="a">
-              <li><a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a></li>
+              <li class="sub-step-content"><a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a></li>
             </ol>
             
-          <li>Basic HTML/CSS knowledge</li>
-          <li>A Core wallet or another EVM-compatible wallet</li>
+          <li class="sub-step-content">Little to no knowledge of HTML/CSS (for GrapesJS)</li>
+          <li class="sub-step-content">A Core wallet or another EVM-compatible wallet</li>
         </ol>
       </div>
     </section>
@@ -83,9 +84,11 @@
           <span class="sub-step-number">1.1</span>
           <h3 class="sub-step-title">Set up GrapesJS</h3>
         </div>
-        <p class="sub-step-content">To start with GrapesJS:</p>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Go to <a href="https://grapesjs.com" target="_blank">grapesjs.com</a></li>
+          <li class="sub-step-content">Go to the GrapesJS website.</li>
+            <ol class="sub-step-content" type="a">
+                <li class="sub-step-content"><a href="https://grapesjs.com" target="_blank">grapesjs.com</a></li>
+            </ol>
           <li class="sub-step-content">Click on the <b>“Webpage Demo”</b> button to start the GrapesJS editor.</li>
           <img  src="assets/Step1.1.2.jpeg" alt="grapeJS demo button" class="step-image">
           <li class="sub-step-content">Design your website using the drag-and-drop interface.</li>
