@@ -31,7 +31,7 @@ h1 {
 
 /* Banner Image Style */
 .banner-image {
-  width: 80%; /* width to match text */
+  width: 65%; /* width to match text */
   height: auto;
   margin: 20px 0;
 }
@@ -180,4 +180,8 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+
+a {
+  color:#E84142;
 }
