@@ -16,6 +16,7 @@
     <h1>How to Create a .avax Site with Fleek</h1>
   </header>
   <img src="assets/avvy-site-banner.PNG" alt=".avax site banner" class="banner-image">
+
   <!-- Table of Contents Container -->
   <div class="toc-container">
     <nav>
@@ -41,7 +42,7 @@
       <p class="sub-step-content">In this tutorial you'll learn how to seamlessly create, deploy, and configure a decentralized webstie using GrapesJS, Fleek, GitHub, and Avvy Domains. Avvy Domains provides an address naming system on the Avalanche blockchain which allows you to link your .avax domain to IPFS-hosted content. This ensures your website remians censorship-resistant an decentralized. We'll help you set up an account with GrapesJS, and guide you through GitHub for a seamless deployment to Fleek. Finally, we'll configure your Avvy Domain to point uour IPFS content. By the end of this tutorial you'll have a fully functional decentralized website accessible via your .avax domain.</p>
     </section>
 
-    <!-- Step 0 Example -->
+    <!-- Step 0 -->
     <section id="prerequisites">
       <div class="step-header">
         <span class="step-number">0.0</span>
@@ -64,7 +65,7 @@
     </section>
   <hr>
 
-    <!-- Step 1 Example -->
+    <!-- Step 1 -->
     <section id="grapesjs">
       <div class="step-header">
         <span class="step-number">1.0</span>
@@ -111,7 +112,7 @@
     </section>
     <hr>
 
-    <!-- Step 2 Example -->
+    <!-- Step 2 -->
     <section id="github">
       <div class="step-header">
         <span class="step-number">2.0</span>
@@ -121,29 +122,65 @@
       <!-- Content Container for Step 2 -->
       <div class="content-container">
         <div class="sub-step-header">
+          <h3 class="sub-step-title">GitHub Introduction</h3>
+        </div>
+        <p class="sub-step-content">GitHub is a web-based platform that allows people to collaborate on projects by managing and sharing files, primarily code, though it's useful for any file type. Think of it as a version control system where you can track changes to your documents, work with others simultaneously, and keep a history of all edits. It’s like Google Docs, but for more complex projects, where every change is recorded, and multiple versions of the project can be worked on and merged together seamlessly. It also fosters community interaction through discussions, issue tracking, and collaborative problem-solving.</p>
+        <div class="sub-step-header">
           <span class="sub-step-number">2.1</span>
           <h3 class="sub-step-title">Create a GitHub Account</h3>
         </div>
-        <p class="sub-step-content">If you don't have a GitHub account, you can create one:</p>
         <ol class="sub-step-content">
-          <li>Go to <a href="https://github.com" target="_blank">github.com</a></li>
-          <li>Sign up by following the instructions</li>
-        </ol>
-
+          <li class="sub-step-content">Go to the GitHub website.</li>
+            <ol class="sub-step-content" type="a">
+              <li class="sub-step-content"><a href="https://github.com" target="_blank">github.com</a></li>
+            </ol>
+          <li class="sub-step-content">Add an e-mail address and click the <b>“<u>Sign up for GitHub</u>”</b> button or sign in with an existing account</li>
+            <ol class="sub-step-content" type="a">
+              <li class="sub-step-content"><a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github" target="_blank">Click here</a> to follow GitHub’s tutorial on creating an account.</li>
+            </ol>
+          <img  src="assets/Step2.1.2.jpeg" alt="GitHub signup" class="step-image">
+          </ol>
         <div class="sub-step-header">
           <span class="sub-step-number">2.2</span>
-          <h3 class="sub-step-title">Upload Files to Repository</h3>
+          <h3 class="sub-step-title">Create Repository</h3>
         </div>
-        <p class="sub-step-content">Once you have a GitHub repository:</p>
         <ol class="sub-step-content">
-          <li>Create a new repository for your website files</li>
-          <li>Upload your HTML and CSS files into a folder named “src”</li>
+          <li class="sub-step-content">Click the <b>“<u>+</u>”</b> button in the top-right corner of the screen within the menubar.</li>
+          <img  src="assets/Step2.2.1.jpeg" alt="create repository" class="step-image">
+          <li class="sub-step-content">Choose <b>“<u>New Repository</u>”</b> from the dropdown menu and give it a name relevant to your website. </li>
+          <ol class="sub-step-content" type="a">
+            <li class="sub-step-content">Choose your repository to be public or private.</li>
+            <li class="sub-step-content">Check the box to create a README.md. ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">READMEs</a></li>
+            <li class="sub-step-content">Check the box to create a License. <i>(optional)</i> ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository" target="_blank">About Licensing</a></li>
+          </ol>
+          <img  src="assets/Step2.2.2.jpeg" alt="new repository" class="step-image">
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">2.3</span>
+          <h3 class="sub-step-title">Create a src and css Directory</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Click the “<b><u>Add file</u></b>” button to the left of the green <b>“<u>&lt;/&gt; Code</u>”</b> button.</li>
+          <img  src="assets/Step2.3.1.jpeg" alt="add file / green code button" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Create new file</u>"</b> button in the dropdown menu that displays.</li>
+          <img  src="assets/Step2.3.2.jpeg" alt="create new file button" class="step-image">
+          <li class="sub-step-content">A new page displays. Type <b>“src/”</b> in the <b>“Name your file…”</b> section to the right of your repository name. This will create you a <b>“src”</b> folder in GitHub.</li>
+          <img  src="assets/Step2.3.3.jpeg" alt="name your HTML file" class="step-image">
+          <li class="sub-step-content">Click the new <b>“Name your file…”</b> section and type <b>“css/”</b>. This will create another folder called <b>“css”</b>.</li>
+          <img  src="assets/Step2.3.4.jpeg" alt="name your CSS file" class="step-image">
+          <li class="sub-step-content">Click the new <b>“Name your file…”</b> section and name the file <b>“dummy.file”</b>. GitHub does not allow the creation of empty directories so we must create a dummy file until we can upload the HTML/CSS in the coming step.</li>
+          <img  src="assets/Step2.3.5.jpeg" alt="name your dummy.file" class="step-image">
+          <li class="sub-step-content">Click the green <b>“<u>Commit changes…</u>”</b> button. A new window displays with another green <b>“<u>Commit changes</u>”</b> button; click it. </li>
+          <img  src="assets/Step2.3.6.jpeg" alt="commit changes" class="step-image">
+          <li class="sub-step-content">The window will disappear. Click the link titled as your repository name.</li>
+          <img  src="assets/Step2.3.7.jpeg" alt="click repository link name" class="step-image">
+
         </ol>
       </div>
     </section>
     <hr>
 
-    <!-- Step 3 Example -->
+    <!-- Step 3 -->
     <section id="fleek">
       <div class="step-header">
         <span class="step-number">3.0</span>
@@ -166,7 +203,7 @@
     </section>
     <hr>
 
-    <!-- Step 4 Example -->
+    <!-- Step 4 -->
     <section id="avvy">
       <div class="step-header">
         <span class="step-number">4.0</span>
@@ -185,7 +222,7 @@
     </section>
     <hr>
 
-    <!-- Step 5 Example -->
+    <!-- Step 5 -->
     <section id="deploy">
       <div class="step-header">
         <span class="step-number">5.0</span>
