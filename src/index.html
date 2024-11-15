@@ -54,7 +54,7 @@
       <!-- Content Container for Step 0 -->
       <div class="content-container">
         <ol>
-          <li class="sub-step-content">An Avvy domain registered (e.g., mydomain.avax)</li>
+          <li class="sub-step-content">An Avvy domain registered (e.g., webpage.avax)</li>
             <ol class="sub-step-content" type="a">
               <li class="sub-step-content"><a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a></li>
             </ol>
@@ -103,12 +103,15 @@
           <img  src="assets/Step1.2.1.jpeg" alt="grapeJS UI/UX" class="step-image">
           <li class="sub-step-content">In the window that displays you can select <b>"Export to ZIP"</b>, in the bottom left corner of the window, to download your website files.</li>
           <img  src="assets/Step1.2.2.jpeg" alt="grapeJS export file" class="step-image">
-          <li class="sub-step-content">Find the zip file you just downloaded in your file system (Windows Explorer, Finder, etc) and open it to reveal your HTML and CSS files.</li>
+          <li class="sub-step-content" id="1.2.3">Find the zip file you just downloaded in your file system (Windows Explorer, Finder, etc) and open it to reveal your HTML and CSS files.</li>
       
-          <li class="sub-step-content">Create a folder (these are called directories in GitHub) called <b>“src”</b> and put the “index.html” file and CSS folder from <b><u>1.2.3</u></b> into that <b>“src”</b> folder. Your folder structure should mimic the image below.</li>
+          <li class="sub-step-content" id="1.2.4">Create a folder (these are called directories in GitHub) called <b>“src”</b> and put the <b>“index.html”</b> file and CSS folder from <a href="#1.2.3"><b><u>Step 1.2.3</u></b></a> into that <b>“src”</b> folder. Your folder structure should mimic the image below.</li>
             <ol class="sub-step-content" type="a">
               <li class="sub-step-content">Folder structure example</li>
               <img  src="assets/Step1.2.4.a.jpeg" alt="grapeJS export file" class="step-image">
+              <a href="#2.4.4" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 2.4.4</u></b></a>
+            </br>
+              <a href="#2.5.5" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 2.5.5</u></b></a>
             </ol>
         </ol>
       </div>
@@ -144,16 +147,17 @@
           <img  src="assets/Step2.1.2.jpeg" alt="GitHub signup" class="step-image">
           </ol>
         <div class="sub-step-header">
-          <span class="sub-step-number">2.2</span>
+          <span class="sub-step-number" id="2.2">2.2</span>
           <h3 class="sub-step-title">Create Repository</h3>
         </div>
+        <a href="#3.3.3" style="margin: 75px;"><span style="color: #fff;">return to </span><b><u>Step 3.3.3</u></b></a>
         <ol class="sub-step-content">
           <li class="sub-step-content">Click the <b>“<u>+</u>”</b> button in the top-right corner of the screen within the menubar.</li>
           <img  src="assets/Step2.2.1.jpeg" alt="create repository" class="step-image">
           <li class="sub-step-content">Choose <b>“<u>New Repository</u>”</b> from the dropdown menu and give it a name relevant to your website. </li>
           <ol class="sub-step-content" type="a">
             <li class="sub-step-content">Choose your repository to be public or private.</li>
-            <li class="sub-step-content">Check the box to create a README.md. ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">READMEs</a></li>
+            <li class="sub-step-content">Check the box to create a README.md. ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">About READMEs</a></li>
             <li class="sub-step-content">Check the box to create a License. <i>(optional)</i> ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository" target="_blank">About Licensing</a></li>
           </ol>
           <img  src="assets/Step2.2.2.jpeg" alt="new repository" class="step-image">
@@ -167,8 +171,10 @@
           <img  src="assets/Step2.3.1.jpeg" alt="add file / green code button" class="step-image">
           <li class="sub-step-content">Click the <b>"<u>Create new file</u>"</b> button in the dropdown menu that displays.</li>
           <img  src="assets/Step2.3.2.jpeg" alt="create new file button" class="step-image">
-          <li class="sub-step-content">A new page displays. Type <b>“src/”</b> in the <b>“Name your file…”</b> section to the right of your repository name. This will create you a <b>“src”</b> folder in GitHub.</li>
+          <li class="sub-step-content" id="2.3.3">A new page displays. Type <b>“src/”</b> in the <b>“Name your file…”</b> section to the right of your repository name. This will create you a <b>“src”</b> folder in GitHub.</li>
           <img  src="assets/Step2.3.3.jpeg" alt="name your HTML file" class="step-image">
+          <a href="#3.4.2" style="float: right; padding-right: 2em;" right;><span style="color: #fff;">return to </span><b><u>Step 3.4.2</u></b></a>
+          </br>
           <li class="sub-step-content">Click the new <b>“Name your file…”</b> section and type <b>“css/”</b>. This will create another folder called <b>“css”</b>.</li>
           <img  src="assets/Step2.3.4.jpeg" alt="name your CSS file" class="step-image">
           <li class="sub-step-content">Click the new <b>“Name your file…”</b> section and name the file <b>“dummy.file”</b>. GitHub does not allow the creation of empty directories so we must create a dummy file until we can upload the HTML/CSS in the coming step.</li>
@@ -177,7 +183,46 @@
           <img  src="assets/Step2.3.6.jpeg" alt="commit changes" class="step-image">
           <li class="sub-step-content">The window will disappear. Click the link titled as your repository name.</li>
           <img  src="assets/Step2.3.7.jpeg" alt="click repository link name" class="step-image">
-
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">2.4</span>
+          <h3 class="sub-step-title">Upload HTML File to Repository</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Click the <b>"src"</b> directory</li>
+          <img  src="assets/Step2.4.1.jpeg" alt="click src directory" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Add file</u>"</b> button to the left of the <b>"<u>&lt;&gt; Code</u>"</b> button</li>
+          <img  src="assets/Step2.4.2.jpeg" alt="click add file" class="step-image">
+          <li class="sub-step-content">From the dropdown menu, click <b>"<u>Upload files</u>"</b>.</li>
+          <img  src="assets/Step2.4.3.jpeg" alt="click add upload file" class="step-image">
+          <li class="sub-step-content" id="2.4.4">Drag and drop <b>"index.html"</b> file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a> into the browser or click the <b>"<u>choose your files</u>"</b> link to upload the file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a>.</li>
+          <img  src="assets/Step2.4.4.jpeg" alt="drag and drop index.html" class="step-image">
+          <li class="sub-step-content">Below that window is another window titled <b>"Commit Changes"</b></li>
+          <img  src="assets/Step2.4.5.jpeg" alt="window titled commit changes" class="step-image">
+          <li class="sub-step-content">In the top section insert a brief description of the upload - ex. uploading HTML file.</li>
+          <img  src="assets/Step2.4.6.jpeg" alt="insert brief description" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Commit changes</u>"</b> button.</li>
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">2.5</span>
+          <h3 class="sub-step-title">Upload CSS File to Repository</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Click the <b>"src"</b> directory</li>
+          <img  src="assets/Step2.5.1.jpeg" alt="click src directory" class="step-image">
+          <li class="sub-step-content">Click the <b>"css"</b> directory</li>
+          <img  src="assets/Step2.5.2.jpeg" alt="click css directory" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Add file</u>"</b> button next to the <b>"<u>three dots</u>"</b> button.</li>
+          <img  src="assets/Step2.5.3.jpeg" alt="click add file button" class="step-image">
+          <li class="sub-step-content">From the dropdown menu, click <b>"Upload files"</b>.</li>
+          <img  src="assets/Step2.5.4.jpeg" alt="click upload files button" class="step-image">
+          <li class="sub-step-content" id="2.5.5">Drag and drop the <b>"styles.css"</b> file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a> into the browser or click the <b>"<u>choose your files</u>"</b> link to upload the file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a>.</li>
+          <img  src="assets/Step2.5.5.jpeg" alt="drag and drop styles.css" class="step-image">
+          <li class="sub-step-content">Below that window is another window titled <b>"Commit Changes"</b></li>
+          <img  src="assets/Step2.5.6.jpeg" alt="window titled commit changes" class="step-image">
+          <li class="sub-step-content">In the top section insert a brief description of the upload - ex. uploading CSS file.</li>
+          <img  src="assets/Step2.5.7.jpeg" alt="insert brief description" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Commit changes</u>"</b> button.</li>
         </ol>
       </div>
     </section>
@@ -193,14 +238,83 @@
       <!-- Content Container for Step 3 -->
       <div class="content-container">
         <div class="sub-step-header">
-          <span class="sub-step-number">3.1</span>
-          <h3 class="sub-step-title">Connect GitHub to Fleek</h3>
+          <h3 class="sub-step-title">Fleek Introduction</h3>
         </div>
-        <p class="sub-step-content">To deploy your site to IPFS:</p>
+        <p class="sub-step-content">Fleek is a platform that simplifies the process of creating and hosting websites on the decentralized web. It allows anyone, even those without technical skills, to deploy websites using decentralized technologies like IPFS (InterPlanetary File System) and blockchain. With Fleek you can integrate seamlessly with popular web development frameworks, making it easy to maintain your site while leveraging the benefits of decentralized infrastructure, such as enhanced privacy and control over your data.</p>
+        <div class="sub-step-header">
+          <span class="sub-step-number">3.1</span>
+          <h3 class="sub-step-title">Create an Account on Fleek</h3>
+        </div>
         <ol class="sub-step-content">
-          <li>Go to <a href="https://app.fleek.xyz" target="_blank">Fleek</a> and create an account</li>
-          <li>Connect your GitHub account and select your repository</li>
-          <li>Deploy to IPFS through Fleek</li>
+          <li class="sub-step-content">Go to the fleek website</li>
+            <ol class="sub-step-content" type="a">
+              <li class="sub-step-content"><a href="https://app.fleek.xyz" target="_blank">Fleek website</a></li>
+            </ol>
+          <li class="sub-step-content">Click the <b>"<u>Create a free account</u>"</b> button.</li>
+          <img  src="assets/Step3.1.2.jpeg" alt="create free account" class="step-image">
+          <li class="sub-step-content">Sign up for an account with a wallet or email.</li>
+          <img  src="assets/Step3.1.3.jpeg" alt="sign up" class="step-image">
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">3.2</span>
+          <h3 class="sub-step-title">Connect GitHub Account</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Click the <b>"<u>Add new</u>"</b> button in the top-right corner of the screen</li>
+          <img  src="assets/Step3.2.1.jpeg" alt="add new button" class="step-image">
+          <li class="sub-step-content">From the dropdown menu, click on <b>"Deploy my site"</b>.</li>
+          <img  src="assets/Step3.2.2.jpeg" alt="deploy site button" class="step-image">
+          <li class="sub-step-content">Click the <b>"GitHub"</b> button.</li>
+          <img  src="assets/Step3.2.3.jpeg" alt="click github button" class="step-image">
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">3.3</span>
+          <h3 class="sub-step-title">Install Fleek App</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Click the <b>"<u>Install Fleek app on GitHub</u>"</b> button.</li>
+          <img  src="assets/Step3.3.1.jpeg" alt="click install fleek button" class="step-image">
+          <li class="sub-step-content">A window populates, representing GitHub, suggesting to install & authorize Fleek CI.</li>
+          <img  src="assets/Step3.3.2.jpeg" alt="install and authorize window" class="step-image">
+          <li class="sub-step-content">Choose the <b>"Only select repositories"</b> option and select the repository, created in <a href="#2.2"><b><u>Step 2.2</u></b></a>, from the <b>"<u>Select repositories</u>" dropdown menu.</b></li>
+          <img  src="assets/Step3.3.3.jpeg" alt="select Repository" class="step-image">
+          <li class="sub-step-content">Scroll down, if necessary, and click <b>"<u>Install & Authorize</u>"</b> button.</li>
+          <img  src="assets/Step3.3.4.jpeg" alt="install & authorize" class="step-image">
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">3.4</span>
+          <h3 class="sub-step-title">Upload to IPFS with Fleek</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Click the <b>"<u>Deploy</u>"</b> button to the right of the reposiry you want to deploy to IPFS as your website.</li>
+          <img  src="assets/Step3.4.1.jpeg" alt="click deploy button" class="step-image">
+          <li class="sub-step-content" id="3.4.2">The window changes to a new display titled <b>"Configure Site"</b>. Change the <b>"Publish Directory"</b> section to <b>"src"</b>. This is the folder you created in <a href="#2.3.3"><b><u>Step 2.3.3</u></b></a>,</li>
+          <img  src="assets/Step3.4.2.jpeg" alt="change section to src" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Deploy site</u>"</b></b> button</li>
+          <li class="sub-step-content">A dashboard will display which provides the status of the initial deployment</li>
+          <img  src="assets/Step3.4.4.jpeg" alt="click deploy button" class="step-image">
+          <li class="sub-step-content">An IPFS hash was generated.</li>
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">3.5</span>
+          <h3 class="sub-step-title">Configure Fleek for Domain</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content">Click the <b>"<u>Settings</u>"</b> option in the menubar at the top of the website.</li>
+          <img  src="assets/Step3.5.1.jpeg" alt="click settings option" class="step-image">
+          <li class="sub-step-content">A new page displays with a sidebar to the left. Click the <b>"<u>Domains</u>"</b> option in the sidebar.</li>
+          <img  src="assets/Step3.5.2.jpeg" alt="click domains option" class="step-image">
+          <li class="sub-step-content">A window to the right of the sidebar displays titled <b>"Custom Domains"</b>. Click the <b>"example.com"</b> section to add your domain.</li>
+          <ol class="sub-step-content" type="a">
+            <li class="sub-step-content">ex: webpage.avax.sh"</li>
+          </ol>
+          <img  src="assets/Step3.5.3.jpeg" alt="click example.com section" class="step-image">
+          <li class="sub-step-content">It will check for availability and then confirm in green text below the provided input - <b style="color: rgb(0, 255, 0);">"webpage.avax.sh is available"</b>.</li>
+          <img  src="assets/Step3.5.4.jpeg" alt="check availability" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Add customer domain</u>"</b> button.</li>
+          <img  src="assets/Step3.5.5.jpeg" alt="custom domain button" class="step-image">
+          <li class="sub-step-content">A new window displays titled <b>"Set CNAME Record"</b>. Here you will notice a <b>"Value"</b> section. Copy the link, within the <b>"Value"</b> section, to your clipboard. <span style="background-color: red;">keep this window open.</span> </li>
+          <img  src="assets/Step3.5.6.jpeg" alt="set cname record" class="step-image">
         </ol>
       </div>
     </section>
@@ -215,11 +329,38 @@
 
       <!-- Content Container for Step 4 -->
       <div class="content-container">
-        <p class="sub-step-content">To link your Avvy domain to your IPFS site:</p>
+        <div class="sub-step-header">
+          <span class="sub-step-number">4.1</span>
+          <h3 class="sub-step-title">Connect Your Wallet</h3>
+        </div>
         <ol class="sub-step-content">
-          <li>Go to <a href="https://app.avvy.domains" target="_blank">Avvy Domains</a></li>
-          <li>Connect your wallet and select your domain</li>
-          <li>Set up a CNAME record pointing to your IPFS hash</li>
+          <li class="sub-step-content">Go to Avvy Domains website</li>
+          <ol class="sub-step-content" type="a">
+            <li class="sub-step-content"><a href="https://app.avvy.domains" target="_blank">Avvy Domains website</a></li>
+          </ol>
+          <li class="sub-step-content">Connect your wallet and select your domain</li>
+          <li class="sub-step-content">Set up a CNAME record pointing to your IPFS hash</li>
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">4.2</span>
+          <h3 class="sub-step-title">Access Avvy Domain Records</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content"></li>
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">4.3</span>
+          <h3 class="sub-step-title">Add DNS CNAME Record</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content"></li>
+        </ol>
+        <div class="sub-step-header">
+          <span class="sub-step-number">4.4</span>
+          <h3 class="sub-step-title">Transaction Approval</h3>
+        </div>
+        <ol class="sub-step-content">
+          <li class="sub-step-content"></li>
         </ol>
       </div>
     </section>
@@ -234,10 +375,13 @@
 
       <!-- Content Container for Step 5 -->
       <div class="content-container">
-        <p class="sub-step-content">After configuring your Avvy domain, verify the settings:</p>
+        <div class="sub-step-header">
+          <span class="sub-step-number">5.1</span>
+          <h3 class="sub-step-title">Return to Fleek Settings</h3>
+        </div>
         <ol class="sub-step-content">
-          <li>Return to Fleek and confirm the CNAME settings</li>
-          <li>Click "Verify" and Fleek will activate your site on the .avax domain</li>
+          <li class="sub-step-content"></li>
+          <li class="sub-step-content"></li>
         </ol>
       </div>
     </section>
