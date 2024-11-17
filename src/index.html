@@ -9,7 +9,7 @@
 <body>
 
   <!-- Share Button -->
-  <button id="shareBtn" class="share-button">Share</button>
+  <button class="share-button" onclick="sharePage()">Share</button>
 
   <!-- Header -->
   <header>
@@ -316,6 +316,8 @@
           <li class="sub-step-content" id="3.5.6">A new window displays titled <b>"Set CNAME Record"</b>. Here you will notice a <b>"Value"</b> section. Copy the link, within the <b>"Value"</b> section, to your clipboard. <span style="background-color: red;">keep this window open.</span> </li>
           <img  src="assets/Step3.5.6.jpeg" alt="set cname record" class="step-image">
           <a href="#4.3.3" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 4.3.3</u></b></a>
+          </br>
+          <a href="#5.1.1" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 5.1.1</u></b></a>
         </ol>
       </div>
     </section>
@@ -412,8 +414,17 @@
           <h3 class="sub-step-title">Return to Fleek Settings</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content"></li>
-          <li class="sub-step-content"></li>
+          <li class="sub-step-content" id="5.1.1">Go back to the Fleek site where you should stil see the window from <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a></li>
+          <li class="sub-step-content">Click the <b>"<u>Ok, I have added it</u>"</b> button.</li>
+          <img  src="assets/Step5.1.2.jpeg" alt="added it button" class="step-image">
+          <li class="sub-step-content">It will begin to verify the management request.</li>
+          <li class="sub-step-content">Once verification has finished you should see a small, green <b style="color: rgb(0, 255, 0);">"Active"</b> sign next to the respected domain.</li>
+          <img  src="assets/Step5.1.4.jpeg" alt="green active sign" class="step-image">
+          <li class="sub-step-content">Click the three dots to the right of the <b style="color: rgb(0, 255, 0);">"Active"</b> sign and a menu displays under it.</li>
+          <img  src="assets/Step5.1.5.jpeg" alt="click the three dots" class="step-image">
+          <li class="sub-step-content">Click the <b>"<u>Visit</u>"</b> button. Your website should load in a new tab.</li>
+          <img  src="assets/Step5.1.6.jpeg" alt="click visit button" class="step-image">
+          <li class="sub-step-content">You have just deployed your first <code style="color: red;">.avax</code> domain.</li>
         </ol>
       </div>
     </section>
@@ -421,6 +432,17 @@
   </main>
 
   <!-- JavaScript for Share Button -->
-  <script src="script.js"></script>
+  <script>
+    function sharePage() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Avvy Terminal',
+          url: window.location.href
+        }).catch(error => console.log('Error sharing', error));
+      } else {
+          alert('Your browser does not support the Web Share API');
+      }
+    }
+  </script>
 </body>
 </html>
