@@ -431,8 +431,9 @@
 
   </main>
 
-  <!-- JavaScript for Share Button -->
-  <script>
+<!-- JavaScript for Share Button -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     function sharePage() {
       if (navigator.share) {
         navigator.share({
@@ -440,9 +441,33 @@
           url: window.location.href
         }).catch(error => console.log('Error sharing', error));
       } else {
-          alert('Your browser does not support the Web Share API');
+        alert('Your browser does not support the Web Share API');
       }
     }
-  </script>
+
+    // JavaScript to scroll to the top of the page
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // Show button when scrolled down
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 2500) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    });
+
+    // Scroll to the top when button is clicked
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn">
+  <span class="icon">↑</span>
+</button>
+
 </body>
 </html>
