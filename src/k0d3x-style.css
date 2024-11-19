@@ -224,7 +224,10 @@ a {
   transform: scale(0.95); /* Slight shrinkage on click */
 }
 
-.scroll-top-btn .icon {
-  font-size: 1.5em; /* Icon size */
-  line-height: 1;
+/* Style for the image */
+.scroll-top-image {
+  width: 100%; /* Make the image fit the button */
+  height: 100%;
+  padding-bottom: 40%;
+  object-fit: cover; /* Ensure the image doesn't distort */
 }
