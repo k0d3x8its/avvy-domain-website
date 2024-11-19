@@ -150,10 +150,12 @@
           <span class="sub-step-number" id="2.2">2.2</span>
           <h3 class="sub-step-title">Create Repository</h3>
         </div>
-        <a href="#3.3.3" style="margin: 75px;"><span style="color: #fff;">return to </span><b><u>Step 3.3.3</u></b></a>
+        
         <ol class="sub-step-content">
           <li class="sub-step-content">Click the <b>“<u>+</u>”</b> button in the top-right corner of the screen within the menubar.</li>
           <img  src="assets/Step2.2.1.jpeg" alt="create repository" class="step-image">
+          <a href="#3.3.3" style="float: right; padding-right: 4%;"><span style="color: #fff;">return to </span><b><u>Step 3.3.3</u></b></a>
+        </br>
           <li class="sub-step-content">Choose <b>“<u>New Repository</u>”</b> from the dropdown menu and give it a name relevant to your website. </li>
           <ol class="sub-step-content" type="a">
             <li class="sub-step-content">Choose your repository to be public or private.</li>
@@ -276,7 +278,7 @@
           <img  src="assets/Step3.3.1.jpeg" alt="click install fleek button" class="step-image">
           <li class="sub-step-content">A window populates, representing GitHub, suggesting to install & authorize Fleek CI.</li>
           <img  src="assets/Step3.3.2.jpeg" alt="install and authorize window" class="step-image">
-          <li class="sub-step-content">Choose the <b>"Only select repositories"</b> option and select the repository, created in <a href="#2.2"><b><u>Step 2.2</u></b></a>, from the <b>"<u>Select repositories</u>" dropdown menu.</b></li>
+          <li class="sub-step-content" id="3.3.3">Choose the <b>"Only select repositories"</b> option and select the repository, created in <a href="#2.2"><b><u>Step 2.2</u></b></a>, from the <b>"<u>Select repositories</u>" dropdown menu.</b></li>
           <img  src="assets/Step3.3.3.jpeg" alt="select Repository" class="step-image">
           <li class="sub-step-content">Scroll down, if necessary, and click <b>"<u>Install & Authorize</u>"</b> button.</li>
           <img  src="assets/Step3.3.4.jpeg" alt="install & authorize" class="step-image">
@@ -309,13 +311,31 @@
             <li class="sub-step-content">ex: webpage.avax.sh"</li>
           </ol>
           <img  src="assets/Step3.5.3.jpeg" alt="click example.com section" class="step-image">
-          <li class="sub-step-content">It will check for availability and then confirm in green text below the provided input - <b style="color: rgb(0, 255, 0);">"webpage.avax.sh is available"</b>.</li>
+          <li class="sub-step-content">It will check for availability and then confirm in green text below the provided input - 
+            <div style="display: flex; align-items: center; font-weight: bold; color: rgb(0, 255, 0);">
+              <span style="display: inline-block; width: 15px; height: 15px; background-color: rgb(0, 255, 0); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 5px;">
+                <span style="color: #3a3a3a; font-size: 14px; font-weight: bold;">✔</span>
+              </span>
+              webpage.avax.sh is available
+            </div>
+          </li>
           <img  src="assets/Step3.5.4.jpeg" alt="check availability" class="step-image">
           <li class="sub-step-content">Click the <b>"<u>Add customer domain</u>"</b> button.</li>
           <img  src="assets/Step3.5.5.jpeg" alt="custom domain button" class="step-image">
-          <li class="sub-step-content" id="3.5.6">A new window displays titled <b>"Set CNAME Record"</b>. Here you will notice a <b>"Value"</b> section. Copy the link, within the <b>"Value"</b> section, to your clipboard. <span style="background-color: red;">keep this window open.</span> </li>
+          <li class="sub-step-content" id="3.5.6">A new window displays titled <b>"Set CNAME Record"</b>. Here you will notice a <b>"Value"</b> section. Copy the link, within the <b>"Value"</b> section, to your clipboard. 
+            <div style="display: flex; align-items: center; font-weight: bold; color: red;">
+              <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow; clip-path: polygon(50% 0%, 100% 100%, 0% 100%); display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                <span style="color: red; font-size: 16px; font-weight: bold; padding-top: 27%;">!</span>
+              </span>
+              keep this window open.
+              <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow; clip-path: polygon(50% 0%, 100% 100%, 0% 100%); display: flex; align-items: center; justify-content: center; margin-left: 10px;">
+                <span style="color: red; font-size: 16px; font-weight: bold; padding-top: 27%;">!</span>
+              </span>
+            </div>
+            
+          </li>
           <img  src="assets/Step3.5.6.jpeg" alt="set cname record" class="step-image">
-          <a href="#4.3.3" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 4.3.3</u></b></a>
+          <a href="#4.3.4" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 4.3.4</u></b></a>
           </br>
           <a href="#5.1.1" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 5.1.1</u></b></a>
         </ol>
@@ -382,7 +402,7 @@
           <img  src="assets/Step4.3.2.jpeg" alt="clck type section" class="step-image">
           <li class="sub-step-content">In the dropdown menu you will notice multiple record types appear. Choose the <b>"DNS CNAME Record"</b> option.</li>
           <img  src="assets/Step4.3.3.jpeg" alt="dns cname record" class="step-image">
-          <li class="sub-step-content" id="4.3.3">In the <b>"Value"</b> section you will paste the link that was copied from <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a></li>
+          <li class="sub-step-content" id="4.3.4">In the <b>"Value"</b> section you will paste the link that was copied from <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a></li>
           <img  src="assets/Step4.3.4.jpeg" alt="paste link copied in step 4.2.2" class="step-image">
           <li class="sub-step-content">Click the <b>"<u>Submit</u>"</b> button.</li>
           <img  src="assets/Step4.3.5.jpeg" alt="submit button" class="step-image">
@@ -424,7 +444,7 @@
           <img  src="assets/Step5.1.5.jpeg" alt="click the three dots" class="step-image">
           <li class="sub-step-content">Click the <b>"<u>Visit</u>"</b> button. Your website should load in a new tab.</li>
           <img  src="assets/Step5.1.6.jpeg" alt="click visit button" class="step-image">
-          <li class="sub-step-content">You have just deployed your first <code style="color: red; font-size: larger;">.avax</code> domain.</li>
+          <li class="sub-step-content">You have just deployed your first <code style="color:#E84142; font-size: larger;">.avax</code> domain!</li>
         </ol>
       </div>
     </section>
@@ -433,7 +453,7 @@
 
 <!-- JavaScript for Share Button -->
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  
     function sharePage() {
       if (navigator.share) {
         navigator.share({
@@ -446,6 +466,7 @@
     }
 
     // JavaScript to scroll to the top of the page
+    document.addEventListener("DOMContentLoaded", () => {
     const scrollTopBtn = document.getElementById("scrollTopBtn");
 
     // Show button when scrolled down
@@ -466,7 +487,7 @@
 
 <!-- Scroll to Top Button -->
 <button id="scrollTopBtn" class="scroll-top-btn">
-  <span class="icon">↑</span>
+  <img src="assets/avvy-button.PNG" alt="Scroll to Top" class="scroll-top-image">
 </button>
 
 </body>
