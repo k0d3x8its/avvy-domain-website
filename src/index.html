@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Create a .avax Site with Fleek</title>
+  <title>BUIDL a .avax Website Guide</title>
   <link rel="stylesheet" href="k0d3x-style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 
   <!-- Header -->
   <header>
-    <h1>How to Create a .avax Site with Fleek</h1>
+    <h1>BUIDL a .avax Website Guide</h1>
   </header>
   <img src="assets/avvy-site-banner.PNG" alt=".avax site banner" class="banner-image">
 
@@ -36,12 +36,21 @@
   </div>
 
   <!-- Main Content -->
-  <main>
+  <main style="padding: 2.5%; border-radius: 15px; box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.6); background: linear-gradient(145deg, #303030, #4d4d4d);">
 
     <!-- Introduction Section -->
     <section id="intro">
       <h2>Introduction</h2>
-      <p class="sub-step-content">In this tutorial you'll learn how to seamlessly create, deploy, and configure a decentralized webstie using GrapesJS, Fleek, GitHub, and Avvy Domains. Avvy Domains provides an address naming system on the Avalanche blockchain which allows you to link your .avax domain to IPFS-hosted content. This ensures your website remians censorship-resistant an decentralized. We'll help you set up an account with GrapesJS, and guide you through GitHub for a seamless deployment to Fleek. Finally, we'll configure your Avvy Domain to point uour IPFS content. By the end of this tutorial you'll have a fully functional decentralized website accessible via your .avax domain.</p>
+      <p class="sub-step-content">In this tutorial you'll learn how to seamlessly create, 
+        deploy, and configure a decentralized webstie using GrapesJS, Fleek, GitHub, and 
+        Avvy Domains. Avvy Domains provides an address naming system on the Avalanche 
+        blockchain which allows you to link your .avax domain to IPFS-hosted content. 
+        This ensures your website remians censorship-resistant an decentralized. We'll 
+        help you set up an account with GrapesJS, and guide you through GitHub for a 
+        seamless deployment to Fleek. Finally, we'll configure your Avvy Domain to point 
+         to your IPFS content. By the end of this tutorial you'll have a fully functional 
+        decentralized website accessible via your <code style="color:#E84142; font-size: larger;">.avax</code> domain.
+      </p>
     </section>
 
     <!-- Step 0 -->
@@ -56,7 +65,9 @@
         <ol>
           <li class="sub-step-content">An Avvy domain registered (e.g., webpage.avax)</li>
             <ol class="sub-step-content" type="a">
-              <li class="sub-step-content"><a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a></li>
+              <li class="sub-step-content">
+                <a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a>
+              </li>
             </ol>
             
           <li class="sub-step-content">Little to no knowledge of HTML/CSS (for GrapesJS)</li>
@@ -78,7 +89,16 @@
         <div class="sub-step-header">
           <h3 class="sub-step-title">GrapesJS Introduction</h3>
         </div>
-        <p class="sub-step-content">GrapesJS is a web-based, open-source tool designed to make website building easy for everyone, even those without coding knowledge. It offers a user-friendly, drag-and-drop interface where you can create and customize websites by simply dragging elements like text, images, and buttons onto your page. Think of it like a digital canvas where you can visually design and arrange your content, much like using a graphic design tool but for building web pages. GrapesJS provides a variety of pre-built components and templates, allowing you to create professional-looking websites without needing to write a single line of code.</p>
+        <p class="sub-step-content">GrapesJS is a web-based, open-source tool designed 
+          to make website building easy for everyone - even those without coding knowledge. 
+          It offers a user-friendly, drag-and-drop interface where you can create and 
+          customize websites by simply dragging elements like text, images, and buttons 
+          onto your page. Think of it like a digital canvas where you can visually design 
+          and arrange your content, much like using a graphic design tool but for building 
+          web pages. GrapesJS provides a variety of pre-built components and templates, 
+          allowing you to create professional-looking websites without needing to write a 
+          single line of code.
+        </p>
 
         <div class="sub-step-header">
           <span class="sub-step-number">1.1</span>
@@ -89,7 +109,7 @@
             <ol class="sub-step-content" type="a">
                 <li class="sub-step-content"><a href="https://grapesjs.com" target="_blank">grapesjs.com</a></li>
             </ol>
-          <li class="sub-step-content">Click on the <b>“Webpage Demo”</b> button to start the GrapesJS editor.</li>
+          <li class="sub-step-content">Click on the <b>“<u>Webpage Demo</u>”</b> button to start the GrapesJS editor.</li>
           <img  src="assets/Step1.1.2.jpeg" alt="grapeJS demo button" class="step-image">
           <li class="sub-step-content">Design your website using the drag-and-drop interface.</li>
           <img  src="assets/Step1.1.3.jpeg" alt="grapeJS UI/UX" class="step-image">
@@ -99,9 +119,9 @@
           <h3 class="sub-step-title">Download the Website</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Once you have completed your design, click on the <b>“&lt;/&gt;”</b> button in the menu bar at the top of the screen.</li>
+          <li class="sub-step-content">Once you have completed your design, click on the <b>“<u>&lt;/&gt;</u>”</b> button in the menu bar at the top of the screen.</li>
           <img  src="assets/Step1.2.1.jpeg" alt="grapeJS UI/UX" class="step-image">
-          <li class="sub-step-content">In the window that displays you can select <b>"Export to ZIP"</b>, in the bottom left corner of the window, to download your website files.</li>
+          <li class="sub-step-content">In the window that displays you can select <b>"<u>Export to ZIP</u>"</b>, in the bottom left corner of the window, to download your website files.</li>
           <img  src="assets/Step1.2.2.jpeg" alt="grapeJS export file" class="step-image">
           <li class="sub-step-content" id="1.2.3">Find the zip file you just downloaded in your file system (Windows Explorer, Finder, etc) and open it to reveal your HTML and CSS files.</li>
       
@@ -130,7 +150,15 @@
         <div class="sub-step-header">
           <h3 class="sub-step-title">GitHub Introduction</h3>
         </div>
-        <p class="sub-step-content">GitHub is a web-based platform that allows people to collaborate on projects by managing and sharing files, primarily code, though it's useful for any file type. Think of it as a version control system where you can track changes to your documents, work with others simultaneously, and keep a history of all edits. It’s like Google Docs, but for more complex projects, where every change is recorded, and multiple versions of the project can be worked on and merged together seamlessly. It also fosters community interaction through discussions, issue tracking, and collaborative problem-solving.</p>
+        <p class="sub-step-content">GitHub is a web-based platform that allows people to 
+          collaborate on projects by managing and sharing files, primarily code, though 
+          it's useful for any file type. Think of it as a version control system where 
+          you can track changes to your documents, work with others simultaneously, and 
+          keep a history of all edits. It's like Google Docs, but for more complex 
+          projects, where every change is recorded, and multiple versions of the project 
+          can be worked on and merged together seamlessly. It also fosters community 
+          interaction through discussions, issue tracking, and collaborative problem-solving.
+        </p>
         <div class="sub-step-header">
           <span class="sub-step-number">2.1</span>
           <h3 class="sub-step-title">Create a GitHub Account</h3>
@@ -152,11 +180,11 @@
         </div>
         
         <ol class="sub-step-content">
-          <li class="sub-step-content">Click the <b>“<u>+</u>”</b> button in the top-right corner of the screen within the menubar.</li>
+          <li class="sub-step-content">Click the <b>“<u>+</u>”</b> button, in the top-right corner of the screen, within the menubar.</li>
           <img  src="assets/Step2.2.1.jpeg" alt="create repository" class="step-image">
           <a href="#3.3.3" style="float: right; padding-right: 4%;"><span style="color: #fff;">return to </span><b><u>Step 3.3.3</u></b></a>
         </br>
-          <li class="sub-step-content">Choose <b>“<u>New Repository</u>”</b> from the dropdown menu and give it a name relevant to your website. </li>
+          <li class="sub-step-content">Choose <b>“<u>New Repository</u>”</b>, from the dropdown menu, and give it a name relevant to your website. </li>
           <ol class="sub-step-content" type="a">
             <li class="sub-step-content">Choose your repository to be public or private.</li>
             <li class="sub-step-content">Check the box to create a README.md. ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">About READMEs</a></li>
@@ -242,7 +270,14 @@
         <div class="sub-step-header">
           <h3 class="sub-step-title">Fleek Introduction</h3>
         </div>
-        <p class="sub-step-content">Fleek is a platform that simplifies the process of creating and hosting websites on the decentralized web. It allows anyone, even those without technical skills, to deploy websites using decentralized technologies like IPFS (InterPlanetary File System) and blockchain. With Fleek you can integrate seamlessly with popular web development frameworks, making it easy to maintain your site while leveraging the benefits of decentralized infrastructure, such as enhanced privacy and control over your data.</p>
+        <p class="sub-step-content">Fleek is a platform that simplifies the process of creating
+           and hosting websites on the decentralized web. It allows anyone, even those without 
+           technical skills, to deploy websites using decentralized technologies like IPFS 
+           (InterPlanetary File System) and blockchain. With Fleek you can integrate seamlessly 
+           with popular web development frameworks, making it easy to maintain your site while 
+           leveraging the benefits of decentralized infrastructure, such as enhanced privacy and 
+           control over your data.
+          </p>
         <div class="sub-step-header">
           <span class="sub-step-number">3.1</span>
           <h3 class="sub-step-title">Create an Account on Fleek</h3>
@@ -264,9 +299,9 @@
         <ol class="sub-step-content">
           <li class="sub-step-content">Click the <b>"<u>Add new</u>"</b> button in the top-right corner of the screen</li>
           <img  src="assets/Step3.2.1.jpeg" alt="add new button" class="step-image">
-          <li class="sub-step-content">From the dropdown menu, click on <b>"Deploy my site"</b>.</li>
+          <li class="sub-step-content">From the dropdown menu, click on <b>"<u>Deploy my site</u>"</b>.</li>
           <img  src="assets/Step3.2.2.jpeg" alt="deploy site button" class="step-image">
-          <li class="sub-step-content">Click the <b>"GitHub"</b> button.</li>
+          <li class="sub-step-content">Click the <b>"<u>GitHub</u>"</b> button.</li>
           <img  src="assets/Step3.2.3.jpeg" alt="click github button" class="step-image">
         </ol>
         <div class="sub-step-header">
@@ -278,9 +313,9 @@
           <img  src="assets/Step3.3.1.jpeg" alt="click install fleek button" class="step-image">
           <li class="sub-step-content">A window populates, representing GitHub, suggesting to install & authorize Fleek CI.</li>
           <img  src="assets/Step3.3.2.jpeg" alt="install and authorize window" class="step-image">
-          <li class="sub-step-content" id="3.3.3">Choose the <b>"Only select repositories"</b> option and select the repository, created in <a href="#2.2"><b><u>Step 2.2</u></b></a>, from the <b>"<u>Select repositories</u>" dropdown menu.</b></li>
+          <li class="sub-step-content" id="3.3.3">Choose the <b>"Only select repositories"</b> option and select the repository, created in <a href="#2.2"><b><u>Step 2.2</u></b></a>, from the <b>"<u>Select repositories</u>"</b> dropdown menu.</li>
           <img  src="assets/Step3.3.3.jpeg" alt="select Repository" class="step-image">
-          <li class="sub-step-content">Scroll down, if necessary, and click <b>"<u>Install & Authorize</u>"</b> button.</li>
+          <li class="sub-step-content">Scroll down, if necessary, and click the <b>"<u>Install & Authorize</u>"</b> button.</li>
           <img  src="assets/Step3.3.4.jpeg" alt="install & authorize" class="step-image">
         </ol>
         <div class="sub-step-header">
@@ -288,7 +323,7 @@
           <h3 class="sub-step-title">Upload to IPFS with Fleek</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Click the <b>"<u>Deploy</u>"</b> button to the right of the reposiry you want to deploy to IPFS as your website.</li>
+          <li class="sub-step-content">Click the <b>"<u>Deploy</u>"</b> button to the right of the repository you want to deploy to IPFS as your website.</li>
           <img  src="assets/Step3.4.1.jpeg" alt="click deploy button" class="step-image">
           <li class="sub-step-content" id="3.4.2">The window changes to a new display titled <b>"Configure Site"</b>. Change the <b>"Publish Directory"</b> section to <b>"src"</b>. This is the folder you created in <a href="#2.3.3"><b><u>Step 2.3.3</u></b></a>,</li>
           <img  src="assets/Step3.4.2.jpeg" alt="change section to src" class="step-image">
@@ -373,10 +408,10 @@
           <img  src="assets/Step4.2.1.jpeg" alt="connect your wallet" class="step-image">
           <li class="sub-step-content" id="4.2.2">Click the domain of your choice, and you are then provided the domain configuration page for that domain.</li>
 
-          <li class="sub-step-content">Look forthe section titled <b>"Records"</b>.</li>
+          <li class="sub-step-content">Look for the section titled <b>"Records"</b>.</li>
           <ol class="sub-step-content" type="a">
             <li class="sub-step-content">If this is a new domain then you will need to set the resolver. If your resolver is set, then move forward to <a href="#4.2.4"><b><u>Step 4.2.4</u></b></a></li>
-            <li class="sub-step-content">Click on the <b>"Set a resolver"</b> link in the <b>"Basic Information</b> section (not shown in image) or click the <b>"Set a resolver"</b> link in the <b>"Records"</b> section (shown in image).</li>
+            <li class="sub-step-content">Click on the <b>"Set a resolver"</b> link in the <b>"Basic Information"</b> section (not shown in image) or click the <b>"Set a resolver"</b> link in the <b>"Records"</b> section (shown in image).</li>
             <img  src="assets/Step4.2.3.b.jpeg" alt="set a resolver" class="step-image">
             <li class="sub-step-content">A new window displays titled <b>"Set Resolver"</b>. Change the <b>"Type"</b> section from <b>"None"</b> to <b>"Default Resolver"</b>.</li>
             <img  src="assets/Step4.2.3.c.jpeg" alt="change to default resolver" class="step-image">
@@ -412,8 +447,8 @@
           <h3 class="sub-step-title">Transaction Approval</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Your preferred wallet will display a transaction user interface asking for you to approve the transaction initiated by clicking the <b>"<u>Submit</u>"</b>button in the previous step (You must pay a small fee to add data to the Avalanche C-Chain).</li>
-          <li class="sub-step-content">Click the <b>"<u>Approve</u>"</b> button to authorize the transaction and add the DNS CNAME to your Avvy domain that was chosen in <a href="#4.2.2"><b><u>Step 4.2.2</u></b></a></li>
+          <li class="sub-step-content">Your preferred wallet will display a transaction user interface asking for you to approve the transaction initiated by clicking the <b>"<u>Submit</u>"</b> button in the previous step (You must pay a small fee to add data to the Avalanche C-Chain).</li>
+          <li class="sub-step-content">Click the <b>"<u>Approve</u>"</b> button to authorize the transaction, and add the DNS CNAME to your Avvy domain that was chosen in <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a></li>
           <img  src="assets/Step4.4.2.jpeg" alt="dns cname record" class="step-image">
         </ol>
       </div>
@@ -434,7 +469,7 @@
           <h3 class="sub-step-title">Return to Fleek Settings</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content" id="5.1.1">Go back to the Fleek site where you should stil see the window from <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a></li>
+          <li class="sub-step-content" id="5.1.1">Go back to the Fleek site where you should still see the window from <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a></li>
           <li class="sub-step-content">Click the <b>"<u>Ok, I have added it</u>"</b> button.</li>
           <img  src="assets/Step5.1.2.jpeg" alt="added it button" class="step-image">
           <li class="sub-step-content">It will begin to verify the management request.</li>
