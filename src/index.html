@@ -46,12 +46,12 @@
       <p class="sub-step-content">In this tutorial you'll learn how to seamlessly create, 
         deploy, and configure a decentralized webstie using GrapesJS, Fleek, GitHub, and 
         Avvy Domains. Avvy Domains provides an address naming system on the Avalanche 
-        blockchain which allows you to link your .avax domain to IPFS-hosted content. 
-        This ensures your website remians censorship-resistant an decentralized. We'll 
-        help you set up an account with GrapesJS, and guide you through GitHub for a 
-        seamless deployment to Fleek. Finally, we'll configure your Avvy Domain to point 
-         to your IPFS content. By the end of this tutorial you'll have a fully functional 
-        decentralized website accessible via your <code style="color:#E84142; font-size: larger;">.avax</code> domain.
+        blockchain which allows you to link your <code style="color:#E84142; font-size: larger;">.avax</code> 
+        domain to IPFS-hosted content. This ensures your website remains censorship-resistant 
+        and decentralized. We'll help you set up an account with GrapesJS, and guide you 
+        through GitHub for a seamless deployment to Fleek. Finally, we'll configure your 
+        Avvy Domain to point to your IPFS content. By the end of this tutorial you'll have 
+        a fully functional decentralized website accessible via your <code style="color:#E84142; font-size: larger;">.avax</code> domain.
       </p>
     </section>
 
@@ -65,19 +65,19 @@
       <!-- Content Container for Step 0 -->
       <div class="content-container">
         <ol>
-          <li class="sub-step-content">An Avvy domain registered (e.g., webpage.avax)</li>
+          <li class="sub-step-content">A registered Avvy domain (e.g., webpage.avax).</li>
             <ol class="sub-step-content" type="a">
               <li class="sub-step-content">
                 <a href="https://avvy.domains/blog/getting-started-guide/" target="_blank">How To Register A Domain</a>
               </li>
             </ol>
             
-          <li class="sub-step-content">Little to no knowledge of HTML/CSS (for GrapesJS)</li>
-          <li class="sub-step-content">A Core wallet or another EVM-compatible wallet</li>
+          <li class="sub-step-content">Little to no knowledge of HTML/CSS (for GrapesJS).</li>
+          <li class="sub-step-content">A Core wallet or another EVM-compatible wallet.</li>
         </ol>
       </div>
     </section>
-  <hr>
+    <hr>
 
     <!-- Step 1 -->
     <section id="grapesjs">
@@ -86,7 +86,9 @@
         <h2 class="step-title">Create a Website with GrapesJS</h2>
       </div>
 
-      <!-- Content Container for Step 1 -->
+      <!------------------------------------------
+        ------ Introduction for Step 1.0 ------
+      ------------------------------------------->
       <div class="content-container">
         <div class="sub-step-header">
           <h3 class="sub-step-title">GrapesJS Introduction</h3>
@@ -102,45 +104,65 @@
           single line of code.
         </p>
 
+        <!------------------------------------------
+        ------ Content Container for Step 1.1 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">1.1</span>
           <h3 class="sub-step-title">Set up GrapesJS</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 1.1.1 -->
           <li class="sub-step-content">Go to the GrapesJS website.</li>
             <ol class="sub-step-content" type="a">
                 <li class="sub-step-content"><a href="https://grapesjs.com" target="_blank">grapesjs.com</a></li>
             </ol>
+
+          <!-- Step 1.1.2 -->
           <li class="sub-step-content">Click on the 
             <button style="color: rgb(222, 56, 255); background-color: white; border-radius: 5px; padding: 5px;">
               <b><u>Webpage Demo</u></b> 
             </button> button to start the GrapesJS editor.
           </li>
           <img  src="assets/Step1.1.2.jpeg" alt="grapeJS demo button" class="step-image">
+
+          <!-- Step 1.1.3 -->
           <li class="sub-step-content">Design your website using the drag-and-drop interface.</li>
           <img  src="assets/Step1.1.3.jpeg" alt="grapeJS UI/UX" class="step-image">
         </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 1.2 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">1.2</span>
           <h3 class="sub-step-title">Download the Website</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 1.2.1 -->
           <li class="sub-step-content">Once you have completed your design, click on the 
             <button style="color: rgb(219, 218, 218); background-color: rgb(94, 91, 91); border-radius: 5px; padding: 5px;">
               <b><u>&lt;/&gt;</u></b> 
             </button> button in the menu bar at the top of the screen.
           </li>
           <img  src="assets/Step1.2.1.jpeg" alt="grapeJS UI/UX" class="step-image">
+
+          <!-- Step 1.2.2 -->
           <li class="sub-step-content">In the window that displays you can select 
             <button style="color: rgb(219, 218, 218); background-color: rgb(94, 91, 91); border-radius: 5px; padding: 5px;">
               <b><u>Export to ZIP</u></b>
             </button>, in the bottom left corner of the window, to download your website files.
           </li>
           <img  src="assets/Step1.2.2.jpeg" alt="grapeJS export file" class="step-image">
+
+          <!-- Step 1.2.3 -->
           <li class="sub-step-content" id="1.2.3">Find the zip file you just downloaded in your file system (Windows Explorer, Finder, etc) and open it to reveal your HTML and CSS files.</li>
       
+          <!-- Step 1.2.4 -->
           <li class="sub-step-content" id="1.2.4">Create a folder (these are called directories in GitHub) called <b>“src”</b> and put the <b>“index.html”</b> file and CSS folder from <a href="#1.2.3"><b><u>Step 1.2.3</u></b></a> into that <b>“src”</b> folder. Your folder structure should mimic the image below.</li>
             <ol class="sub-step-content" type="a">
+
+              <!-- Step 1.2.4.a -->
               <li class="sub-step-content">Folder structure example</li>
               <img  src="assets/Step1.2.4.a.jpeg" alt="grapeJS export file" class="step-image">
               <a href="#2.4.4" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 2.4.4</u></b></a>
@@ -159,7 +181,9 @@
         <h2 class="step-title">Upload Files to GitHub</h2>
       </div>
 
-      <!-- Content Container for Step 2 -->
+        <!------------------------------------------
+          ------ Introduction for Step 2.0 ------
+        ------------------------------------------->
       <div class="content-container">
         <div class="sub-step-header">
           <h3 class="sub-step-title">GitHub Introduction</h3>
@@ -173,32 +197,43 @@
           can be worked on and merged together seamlessly. It also fosters community 
           interaction through discussions, issue tracking, and collaborative problem-solving.
         </p>
+
+        <!------------------------------------------
+        ------ Content Container for Step 2.1 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">2.1</span>
           <h3 class="sub-step-title">Create a GitHub Account</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 2.1.1 -->
           <li class="sub-step-content">Go to the GitHub website.</li>
             <ol class="sub-step-content" type="a">
               <li class="sub-step-content"><a href="https://github.com" target="_blank">github.com</a></li>
             </ol>
-          <li class="sub-step-content">Add an e-mail address and click the 
-              <button style="color: white; background-color: rgb(136, 12, 236); border-radius: 5px; padding: 3px;">
+
+          <!-- Step 2.1.2 -->
+          <li class="sub-step-content">Add an e-mail address, and click the 
+              <button style="color: white; background-color: rgb(136, 12, 236); border-radius: 5px; padding: 5px;">
                 <b><u>Sign up for GitHub</u></b>
               </button> 
-                button or sign in with an existing account
+                button or sign in with an existing account.
           </li>
             <ol class="sub-step-content" type="a">
               <li class="sub-step-content"><a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github" target="_blank">Click here</a> to follow GitHub’s tutorial on creating an account.</li>
             </ol>
           <img  src="assets/Step2.1.2.jpeg" alt="GitHub signup" class="step-image">
           </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 2.2 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number" id="2.2">2.2</span>
           <h3 class="sub-step-title">Create Repository</h3>
         </div>
-        
         <ol class="sub-step-content">
+          <!-- Step 2.2.1 -->
           <li class="sub-step-content">Click the
               <button style="color: white; background-color: black; border-radius: 5px; padding: 3px;">
                 <b style="padding-right: 12px; padding-left: 3px;"><u>+</u></b>&#9660;
@@ -207,25 +242,35 @@
           <img  src="assets/Step2.2.1.jpeg" alt="create repository" class="step-image">
           <a href="#3.3.3" style="float: right; padding-right: 4%;"><span style="color: #fff;">return to </span><b><u>Step 3.3.3</u></b></a>
         </br>
+
+          <!-- Step 2.2.2 -->
           <li class="sub-step-content">Click the
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 3px; padding-right: 50px;">
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px; padding-right: 50px;">
               <i class="fa fa-book" style="padding-right: 8px; padding-left: 5px;"></i><b><u>New Repository</u></b>
             </button> button, from the dropdown menu, and give it a name relevant to your website.
           </li>
+
+          <!-- Step 2.2.2.a -->
           <ol class="sub-step-content" type="a">
             <li class="sub-step-content">Choose your repository to be public or private.</li>
-            <li class="sub-step-content">Check the box to create a README.md. ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">About READMEs</a></li>
+            <li class="sub-step-content">Check the box to create a README.md. <i>(optional)</i> ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">About READMEs</a></li>
             <li class="sub-step-content">Check the box to create a License. <i>(optional)</i> ~> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository" target="_blank">About Licensing</a></li>
           </ol>
           <img  src="assets/Step2.2.2.jpeg" alt="new repository" class="step-image">
         </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 2.3 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">2.3</span>
           <h3 class="sub-step-title">Create a src and css Directory</h3>
         </div>
         <ol class="sub-step-content">
+
+          <!-- Step 2.3.1 -->
           <li class="sub-step-content">Click the
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 3px;">
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px;">
               <b style="padding-right: 12px; padding-left: 3px;"><u>Add file</u></b>&#9660;
             </button>  
             button to the left of the
@@ -235,21 +280,31 @@
             button.
           </li>
           <img  src="assets/Step2.3.1.jpeg" alt="add file / green code button" class="step-image">
+
+          <!-- Step 2.3.2 -->
           <li class="sub-step-content">Click the 
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 3px; padding-right: 50px;">
-              <i class="fa fa-plus" style="padding-right: 8px;"></i><b><u>Create new file</u></b>
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px; padding-right: 50px;">
+              <i class="fa fa-plus" style="padding-right: 8px; padding-left: 5px;"></i><b><u>Create new file</u></b>
             </button>
             button in the dropdown menu that displays.
           </li>
           <img  src="assets/Step2.3.2.jpeg" alt="create new file button" class="step-image">
+
+          <!-- Step 2.3.3 -->
           <li class="sub-step-content" id="2.3.3">A new page displays. Type <b>“src/”</b> in the <b>“Name your file…”</b> section to the right of your repository name. This will create you a <b>“src”</b> folder in GitHub.</li>
           <img  src="assets/Step2.3.3.jpeg" alt="name your HTML file" class="step-image">
           <a href="#3.4.2" style="float: right; padding-right: 2em;" right;><span style="color: #fff;">return to </span><b><u>Step 3.4.2</u></b></a>
           </br>
+
+          <!-- Step 2.3.4 -->
           <li class="sub-step-content">Click the new <b>“Name your file…”</b> section and type <b>“css/”</b>. This will create another folder called <b>“css”</b>.</li>
           <img  src="assets/Step2.3.4.jpeg" alt="name your CSS file" class="step-image">
+
+          <!-- Step 2.3.5 -->
           <li class="sub-step-content">Click the new <b>“Name your file…”</b> section and name the file <b>“dummy.file”</b>. GitHub does not allow the creation of empty directories so we must create a dummy file until we can upload the HTML/CSS in the coming step.</li>
           <img  src="assets/Step2.3.5.jpeg" alt="name your dummy.file" class="step-image">
+
+          <!-- Step 2.3.6 -->
           <li class="sub-step-content">Click the
             <button style="color: white; background-color: green; border-radius: 5px; padding: 3px;">
               <b><u>Commit changes…</u></b> 
@@ -259,18 +314,31 @@
             </button> button; click it. 
           </li>
           <img  src="assets/Step2.3.6.jpeg" alt="commit changes" class="step-image">
+
+          <!-- Step 2.3.7 -->
           <li class="sub-step-content">The window will disappear. Click the link titled as your repository name.</li>
           <img  src="assets/Step2.3.7.jpeg" alt="click repository link name" class="step-image">
         </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 2.4 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">2.4</span>
           <h3 class="sub-step-title">Upload HTML File to Repository</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Click the <b>"src"</b> directory</li>
+          <!-- Step 2.4.1 -->
+          <li class="sub-step-content">Click the 
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px;">
+              <i class="fa fa-folder" style="font-size: 12px; padding-left: 5px;"></i><b style="padding: 5px 5px 0;">src</b> 
+            </button> directory.
+          </li>
           <img  src="assets/Step2.4.1.jpeg" alt="click src directory" class="step-image">
+
+          <!-- Step 2.4.2 -->
           <li class="sub-step-content">Click the
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 3px;">
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px;">
               <b style="padding-right: 12px; padding-left: 3px;"><u>Add file</u></b>&#9660;
             </button>  
             button to the left of the
@@ -280,55 +348,87 @@
             button.
           </li>
           <img  src="assets/Step2.4.2.jpeg" alt="click add file" class="step-image">
-          <li class="sub-step-content">From the dropdown menu, click 
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 5px; padding-right: 50px;">
+
+          <!-- Step 2.4.3 -->
+          <li class="sub-step-content">From the dropdown menu, click the 
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 5px; padding-right: 50px;">
               <i class="fa fa-upload" style="padding-right: 8px;"></i><u><b>Upload files</b></u>
             </button> button.
           </li>
           <img  src="assets/Step2.4.3.jpeg" alt="click add upload file" class="step-image">
-          <li class="sub-step-content" id="2.4.4">Drag and drop <b>"index.html"</b> file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a> into the browser or click the <b>"<u>choose your files</u>"</b> link to upload the file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a>.</li>
+
+          <!-- Step 2.4.4 -->
+          <li class="sub-step-content" id="2.4.4">Drag and drop the <b>"index.html"</b> file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a> into the browser or click the <b>"<u>choose your files</u>"</b> link to upload the file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a>.</li>
           <img  src="assets/Step2.4.4.jpeg" alt="drag and drop index.html" class="step-image">
-          <li class="sub-step-content">Below that window is another window titled <b>"Commit changes"</b></li>
+
+          <!-- Step 2.4.5 -->
+          <li class="sub-step-content">Below that window is another window titled <b>"Commit changes"</b>.</li>
           <img  src="assets/Step2.4.5.jpeg" alt="window titled commit changes" class="step-image">
+
+          <!-- Step 2.4.6 -->
           <li class="sub-step-content">In the top section insert a brief description of the upload - ex. uploading HTML file.</li>
           <img  src="assets/Step2.4.6.jpeg" alt="insert brief description" class="step-image">
           <li class="sub-step-content">Click the 
             <button style="color: white; background-color: green; border-radius: 5px; padding: 3px;">
               <b><u>Commit changes</u></b>
-              </button> 
-            button.
+              </button> button.
           </li>
         </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 2.5 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">2.5</span>
           <h3 class="sub-step-title">Upload CSS File to Repository</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Click the <b>"src"</b> directory</li>
+          <!-- Step 2.5.1 -->
+          <li class="sub-step-content">Click the
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px;">
+              <i class="fa fa-folder" style="font-size: 12px; padding-left: 5px;"></i><b style="padding: 5px 5px 0;">src</b> 
+            </button> directory.
+          </li>
           <img  src="assets/Step2.5.1.jpeg" alt="click src directory" class="step-image">
-          <li class="sub-step-content">Click the <b>"css"</b> directory</li>
-          <img  src="assets/Step2.5.2.jpeg" alt="click css directory" class="step-image">
+
+          <!-- Step 2.5.2 -->
           <li class="sub-step-content">Click the 
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 3px;">
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px;">
+              <i class="fa fa-folder" style="font-size: 12px; padding-left: 5px;"></i><b style="padding: 5px 5px 0;">css</b> 
+            </button> directory.
+          </li>
+          <img  src="assets/Step2.5.2.jpeg" alt="click css directory" class="step-image">
+
+          <!-- Step 2.5.3 -->
+          <li class="sub-step-content">Click the 
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px;">
               <b style="padding-right: 12px; padding-left: 3px;"><u>Add file</u></b>&#9660;
             </button>  
             button next to the 
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 3px;">
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 3px;">
               <b><u>...</u></b>
             </button>
             button.
           </li>
           <img  src="assets/Step2.5.3.jpeg" alt="click add file button" class="step-image">
+
+          <!-- Step 2.5.4 -->
           <li class="sub-step-content">From the dropdown menu, click 
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 5px; padding-right: 50px;">
+            <button style="color: rgb(178, 179, 184); background-color: rgb(20, 21, 26); border-radius: 5px; padding: 5px; padding-right: 50px;">
               <i class="fa fa-upload" style="padding-right: 8px;"></i><u><b>Upload files</b></u>
             </button>.
             </li>
           <img  src="assets/Step2.5.4.jpeg" alt="click upload files button" class="step-image">
+
+          <!-- Step 2.5.5 -->
           <li class="sub-step-content" id="2.5.5">Drag and drop the <b>"styles.css"</b> file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a> into the browser or click the <b>"<u>choose your files</u>"</b> link to upload the file from <a href="#1.2.4"><b><u>Step 1.2.4</u></b></a>.</li>
           <img  src="assets/Step2.5.5.jpeg" alt="drag and drop styles.css" class="step-image">
-          <li class="sub-step-content">Below that window is another window titled <b>"Commit Changes"</b></li>
+
+          <!-- Step 2.5.6 -->
+          <li class="sub-step-content">Below that window is another window titled <b>"Commit Changes"</b>.</li>
           <img  src="assets/Step2.5.6.jpeg" alt="window titled commit changes" class="step-image">
+
+          <!-- Step 2.5.7 -->
           <li class="sub-step-content">In the top section insert a brief description of the upload - ex. uploading CSS file.</li>
           <img  src="assets/Step2.5.7.jpeg" alt="insert brief description" class="step-image">
           <li class="sub-step-content">Click the 
@@ -348,7 +448,9 @@
         <h2 class="step-title">Upload to Fleek for IPFS Deployment</h2>
       </div>
 
-      <!-- Content Container for Step 3 -->
+      <!------------------------------------------
+        ------ Introduction for Step 3.0 ------
+      ------------------------------------------->
       <div class="content-container">
         <div class="sub-step-header">
           <h3 class="sub-step-title">Fleek Introduction</h3>
@@ -361,41 +463,60 @@
            leveraging the benefits of decentralized infrastructure, such as enhanced privacy and 
            control over your data.
           </p>
+
+      <!------------------------------------------
+      ------ Content Container for Step 3.1 ------
+      ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">3.1</span>
           <h3 class="sub-step-title">Create an Account on Fleek</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Go to the fleek website</li>
+          <!-- Step 3.1.1 -->
+          <li class="sub-step-content">Go to the fleek website.</li>
             <ol class="sub-step-content" type="a">
+              <!-- Step 3.1.1.a -->
               <li class="sub-step-content"><a href="https://app.fleek.xyz" target="_blank">Fleek website</a></li>
             </ol>
+
+          <!-- Step 3.1.2 -->
           <li class="sub-step-content">Click the 
             <button style="color: rgb(255, 217, 0); background-color: rgb(59, 57, 0); border-radius: 5px; padding: 3px;">
             <b><u>Create a free account</u></b> 
           </button> button.
           </li>
           <img  src="assets/Step3.1.2.jpeg" alt="create free account" class="step-image">
-          <li class="sub-step-content">Sign up for an account with a wallet or email.</li>
+
+          <!-- Step 3.1.3 -->
+          <li class="sub-step-content">Sign up for an account with a wallet or email address.</li>
           <img  src="assets/Step3.1.3.jpeg" alt="sign up" class="step-image">
         </ol>
+
+      <!------------------------------------------
+      ------ Content Container for Step 3.2 ------
+      ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">3.2</span>
           <h3 class="sub-step-title">Connect GitHub Account</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 3.2.1 -->
           <li class="sub-step-content">Click the
             <button style="color: rgb(255, 217, 0); background-color: rgb(59, 57, 0); border-radius: 5px; padding: 3px;">
               <b style="padding-right: 12px; padding-left: 3px;"><u>Add new</u></b>&#9660;
-            </button> button in the top-right corner of the screen
+            </button> button in the top-right corner of the screen.
           </li>
           <img  src="assets/Step3.2.1.jpeg" alt="add new button" class="step-image">
+
+          <!-- Step 3.2.2 -->
           <li class="sub-step-content">From the dropdown menu, click on the 
             <button style="color: white; background-color: black; border-radius: 5px; padding: 3px;">
             <b style="padding-right: 50px; padding-left: 5px;"><u>Deploy my site</u></b><i class="fa fa-rocket" style="padding-right: 3px; padding-top: 3px;"></i> 
           </button> button.
           </li>
           <img  src="assets/Step3.2.2.jpeg" alt="deploy site button" class="step-image">
+
+          <!-- Step 3.2.3 -->
           <li class="sub-step-content">Click the 
             <button style="color: white; background-color: rgb(27, 27, 27); border-radius: 5px; padding: 3px;">
               <b style="padding-right: 150px;"><u>GitHub</u></b><i class="fab fa-github"></i> 
@@ -403,19 +524,28 @@
           </li>
           <img  src="assets/Step3.2.3.jpeg" alt="click github button" class="step-image">
         </ol>
+
+      <!------------------------------------------
+      ------ Content Container for Step 3.3 ------
+      ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">3.3</span>
           <h3 class="sub-step-title">Install Fleek App</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 3.3.1 -->
           <li class="sub-step-content">Click the 
             <button style="color: rgb(255, 217, 0); background-color: rgb(59, 57, 0); border-radius: 5px; padding: 3px;">
               <b><u>Install Fleek app on GitHub</u></b> 
             </button> button.
           </li>
           <img  src="assets/Step3.3.1.jpeg" alt="click install fleek button" class="step-image">
+
+          <!-- Step 3.3.2 -->
           <li class="sub-step-content">A window populates, representing GitHub, suggesting to install & authorize Fleek CI.</li>
           <img  src="assets/Step3.3.2.jpeg" alt="install and authorize window" class="step-image">
+
+          <!-- Step 3.3.3 -->
           <li class="sub-step-content" id="3.3.3">Choose the <b>"Only select repositories"</b> option and select the repository, created in <a href="#2.2"><b><u>Step 2.2</u></b></a>, from the 
             
             <button style="color: white; background-color: rgb(29, 28, 28); border-radius: 5px; padding: 3px;">
@@ -423,6 +553,8 @@
             </button> menu.
           </li>
           <img  src="assets/Step3.3.3.jpeg" alt="select Repository" class="step-image">
+
+          <!-- Step 3.3.4 -->
           <li class="sub-step-content">Scroll down, if necessary, and click the
             <button style="color: white; background-color: green; border-radius: 5px; padding: 3px;">
               <b><u>Install & Authorize</u></b>
@@ -430,76 +562,106 @@
           </li>
           <img  src="assets/Step3.3.4.jpeg" alt="install & authorize" class="step-image">
         </ol>
+
+      <!------------------------------------------
+      ------ Content Container for Step 3.4 ------
+      ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">3.4</span>
           <h3 class="sub-step-title">Upload to IPFS with Fleek</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 3.4.1 -->
           <li class="sub-step-content">Click the
             <button style="color: rgb(255, 217, 0); background-color: rgb(59, 57, 0); border-radius: 5px; padding: 3px;">
               <b><u>Deploy</u></b> 
             </button> button to the right of the repository you want to deploy to IPFS as your website.
           </li>
           <img  src="assets/Step3.4.1.jpeg" alt="click deploy button" class="step-image">
+
+          <!-- Step 3.4.2 -->
           <li class="sub-step-content" id="3.4.2">The window changes to a new display titled <b>"Configure Site"</b>. Change the <b>"Publish Directory"</b> section to <b>"src"</b>. This is the folder you created in <a href="#2.3.3"><b><u>Step 2.3.3</u></b></a>,</li>
           <img  src="assets/Step3.4.2.jpeg" alt="change section to src" class="step-image">
+
+          <!-- Step 3.4.3 -->
           <li class="sub-step-content">Click the 
             <button style="color: rgb(255, 217, 0); background-color: rgb(59, 57, 0); border-radius: 5px; padding: 3px;">
               <b><u>Deploy site</u></b></b>
             </button> button
           </li>
-          <li class="sub-step-content">A dashboard will display which provides the status of the initial deployment</li>
+
+          <!-- Step 3.4.4 -->
+          <li class="sub-step-content">A dashboard will display which provides the status of the initial deployment.</li>
           <img  src="assets/Step3.4.4.jpeg" alt="click deploy button" class="step-image">
+
+          <!-- Step 3.4.5 -->
           <li class="sub-step-content">An IPFS hash was generated.</li>
         </ol>
+
+      <!------------------------------------------
+      ------ Content Container for Step 3.5 ------
+      ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">3.5</span>
           <h3 class="sub-step-title">Configure Fleek for Domain</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 3.5.1 -->
           <li class="sub-step-content">Click the 
-            <button style="color: white; background-color: black; border-radius: 5px; padding: 3px;">
+            <button style="color: white; background-color: black; border-radius: 5px; padding: 5px;">
               <i class="fas fa-cog" style="font-size: 16px; padding-left:2px; padding-right: 10px;"></i>
               <b><u>Settings</u></b>
             </button> option in the menubar at the top of the website.
           </li>
           <img  src="assets/Step3.5.1.jpeg" alt="click settings option" class="step-image">
+
+          <!-- Step 3.5.2 -->
           <li class="sub-step-content">A new page displays with a sidebar to the left. Click the 
             <button style="color: white; background-color: rgb(29, 28, 28); border-radius: 5px; padding: 5px;">
             <b style="padding-right: 60px; padding-left: 5px;"><u>Domains</u></b> 
           </button> option in the sidebar.
         </li>
           <img  src="assets/Step3.5.2.jpeg" alt="click domains option" class="step-image">
+
+          <!-- Step 3.5.3 -->
           <li class="sub-step-content">A window to the right of the sidebar displays titled <b>"Custom Domains"</b>. Click the <b>"example.com"</b> section to add your domain.</li>
           <ol class="sub-step-content" type="a">
             <li class="sub-step-content">ex: webpage.avax.sh</li>
           </ol>
           <img  src="assets/Step3.5.3.jpeg" alt="click example.com section" class="step-image">
+
+          <!-- Step 3.5.4 -->
           <li class="sub-step-content">It will check for availability and then confirm in green text below the provided input - 
             <div style="display: inline-flex; align-items: center; font-weight: bold; color: rgb(0, 255, 0);">
               <span style="width: 12px; height: 12px; background-color: rgb(0, 255, 0); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 5px;">
                 <span style="color: #3a3a3a; font-size: 14px; font-weight: bold;">✔</span>
               </span> webpage.avax.sh is available
-            </div>
+            </div>.
           </li>
           <img  src="assets/Step3.5.4.jpeg" alt="check availability" class="step-image">
+
+          <!-- Step 3.5.5 -->
           <li class="sub-step-content">Click the 
             <button style="color: rgb(255, 217, 0); background-color: rgb(59, 57, 0); border-radius: 5px; padding: 3px;">
             <b><u>Add custom domain</u></b> 
             </button> button.
           </li>
           <img  src="assets/Step3.5.5.jpeg" alt="custom domain button" class="step-image">
-          <li class="sub-step-content" id="3.5.6">A new window displays titled <b>"Set CNAME Record"</b>. Here you will notice a <b>"Value"</b> section. Copy the link, within the <b>"Value"</b> section, to your clipboard. 
+
+          <!-- Step 3.5.6 -->
+          <li class="sub-step-content" id="3.5.6">A new window displays titled <b>"Set CNAME Record"</b>. 
+            Here you will notice a <b>"Value"</b> section. Click the 
+            <i class="fa fa-clone" style="font-size: 12px; padding-left:2px; padding-right: 10px;"></i>icon 
+            to copy the link, within the <b>"Value"</b> section, to your clipboard. 
             <div style="display: flex; align-items: center; font-weight: bold; color: red;">
-              <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow; clip-path: polygon(50% 0%, 100% 100%, 0% 100%); display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+              <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow;clip-path: polygon(50% 0%, 100% 100%, 0% 100%); display: flex; align-items: center; justify-content: center; margin-right: 10px;">
                 <span style="color: red; font-size: 16px; font-weight: bold; padding-top: 27%;">!</span>
               </span>
-              keep this window open.
+              keep this window open!
               <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow; clip-path: polygon(50% 0%, 100% 100%, 0% 100%); display: flex; align-items: center; justify-content: center; margin-left: 10px;">
                 <span style="color: red; font-size: 16px; font-weight: bold; padding-top: 27%;">!</span>
               </span>
-            </div>
-            
+            </div> 
           </li>
           <img  src="assets/Step3.5.6.jpeg" alt="set cname record" class="step-image">
           <a href="#4.3.4" style="float: right;" right;><span style="color: #fff;">return to </span><b><u>Step 4.3.4</u></b></a>
@@ -517,61 +679,87 @@
         <h2 class="step-title">Configure Your Avvy Domain</h2>
       </div>
 
-      <!-- Content Container for Step 4 -->
+      <!------------------------------------------
+      ------ Content Container for Step 4.1 ------
+      ------------------------------------------->
       <div class="content-container">
         <div class="sub-step-header">
           <span class="sub-step-number">4.1</span>
           <h3 class="sub-step-title">Connect Your Wallet</h3>
         </div>
         <ol class="sub-step-content">
-          <li class="sub-step-content">Go to Avvy Domains website</li>
+          <!-- Step 4.1.1 -->
+          <li class="sub-step-content">Go to Avvy Domains website.</li>
           <ol class="sub-step-content" type="a">
+            <!-- Step 4.1.1.a -->
             <li class="sub-step-content"><a href="https://app.avvy.domains" target="_blank">Avvy Domains website</a></li>
           </ol>
+
+          <!-- Step 4.1.2 -->
           <li class="sub-step-content">Click the 
             <button style="color: white; background-color: rgb(2, 13, 48); border-radius: 5px; padding: 3px;">
               <b><u>Connect</u></b> 
             </button> button.
           </li>
-            
           <img  src="assets/Step4.1.2.jpeg" alt="connect your wallet" class="step-image">
         </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 4.2 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">4.2</span>
           <h3 class="sub-step-title">Access Avvy Domain Records</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 4.2.1 -->
           <li class="sub-step-content">Click the 
             <button style="color: white; background-color: rgb(90, 102, 139); border-radius: 5px; padding: 3px;">
               <b><u>My Domains</u></b><i class="fas fa-arrow-right" style="font-size: 16px; padding-left: 80px;"></i> 
             </button> button.
           </li>
           <img  src="assets/Step4.2.1.jpeg" alt="connect your wallet" class="step-image">
-          <li class="sub-step-content" id="4.2.2">Click the domain of your choice, and you are then provided the domain configuration page for that domain.</li>
 
+          <!-- Step 4.2.2 -->
+          <li class="sub-step-content" id="4.2.2">Click the domain of your choice. You are then provided the domain configuration page for that domain.</li>
+
+          <!-- Step 4.2.3 -->
           <li class="sub-step-content" id="4.2.3">Look for the section titled <b>"Records"</b>.</li>
           <ol class="sub-step-content" type="a">
+            <!-- Step 4.2.3.a -->
             <li class="sub-step-content">If this is a new domain then you will need to set the resolver. If your resolver is set, then move forward to <a href="#4.2.4"><b><u>Step 4.2.4</u></b></a></li>
+            
+            <!-- Step 4.2.3.b -->
             <li class="sub-step-content">Click on the <b>"Set a resolver"</b> link in the <b>"Basic Information"</b> section (not shown in image) or click the <b>"Set a resolver"</b> link in the <b>"Records"</b> section (shown in image).</li>
             <img  src="assets/Step4.2.3.b.jpeg" alt="set a resolver" class="step-image">
+
+            <!-- Step 4.2.3.c -->
             <li class="sub-step-content">A new window displays titled <b>"Set Resolver"</b>. Change the <b>"Type"</b> section from <b>"None"</b> to <b>"Default Resolver"</b>.</li>
             <img  src="assets/Step4.2.3.c.jpeg" alt="change to default resolver" class="step-image">
+
+            <!-- Step 4.2.3.d -->
             <li class="sub-step-content">Click the 
               <button style="color: white; background-color: rgb(90, 102, 139); border-radius: 5px; padding: 3px;">
                 <b style="padding: 50px 50px 0;"><u>Submit</u></b> 
               </button> button.
             </li>
             <img  src="assets/Step4.2.3.d.jpeg" alt="click submit button" class="step-image">
+
+            <!-- Step 4.2.3.e -->
             <li class="sub-step-content">Your preferred wallet will display a transaction user interface for you to approve the transaction initiated by clicking the 
               <button style="color: white; background-color: rgb(90, 102, 139); border-radius: 5px; padding: 3px;">
                 <b style="padding: 50px 50px 0;"><u>Submit</u></b> 
               </button> button in the previous step. (A small fee must be paid to make changes to the Avalanche C-Chain).
             </li>
+
+            <!-- Step 4.2.3.f -->
             <li class="sub-step-content">Click the 
               <button style="color: black; background-color: white; border-radius: 15px; padding: 5px; ">
                 <b style="padding-left: 20px; padding-right: 20px;"><u>Approve</u></b> 
               </button> button to authorize the transaction.</li>
             <img  src="assets/Step4.2.3.f.jpeg" alt="click approve button" class="step-image">
+
+            <!-- Step 4.2.3.g -->
             <li class="sub-step-content">Click the 
               <button style="color: white; background-color: rgb(90, 102, 139); border-radius: 5px; padding: 3px;">
                 <b style="padding-left: 50px; padding-right: 50px;"><u>Close</u></b> 
@@ -579,22 +767,35 @@
             </li>
             <img  src="assets/Step4.2.3.g.jpeg" alt="click close button" class="step-image">
           </ol>
-          <li class="sub-step-content" id="4.2.4">Click the <b>"Add a record"</b> link in the section previously mentioned in Step <a href="#4.2.3"><b><u>Step 4.2.3</u></b></a></li>
+          <li class="sub-step-content" id="4.2.4">Click the <b>"Add a record"</b> link in the section previously mentioned in Step <a href="#4.2.3"><b><u>Step 4.2.3</u></b></a>.</li>
           <img  src="assets/Step4.2.4.jpeg" alt="add a record" class="step-image">
         </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 4.3 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">4.3</span>
           <h3 class="sub-step-title">Add DNS CNAME Record</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 4.3.1 -->
           <li class="sub-step-content">A new window displays titled <b>"Add Record"</b>. Two sections appear within the window titled <b>"Type"</b> and <b>"Value"</b> respectively.</li>
           <img  src="assets/Step4.3.1.jpeg" alt="add record window" class="step-image">
+
+          <!-- Step 4.3.2 -->
           <li class="sub-step-content">Click the <b>"Type"</b> section and a dropdown menu displays.</li>
           <img  src="assets/Step4.3.2.jpeg" alt="clck type section" class="step-image">
+
+          <!-- Step 4.3.3 -->
           <li class="sub-step-content">In the dropdown menu you will notice multiple record types appear. Choose the <b>"DNS CNAME Record"</b> option.</li>
           <img  src="assets/Step4.3.3.jpeg" alt="dns cname record" class="step-image">
+
+          <!-- Step 4.3.4 -->
           <li class="sub-step-content" id="4.3.4">In the <b>"Value"</b> section you will paste the link that was copied from <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a></li>
           <img  src="assets/Step4.3.4.jpeg" alt="paste link copied in step 4.2.2" class="step-image">
+
+          <!-- Step 4.3.5 -->
           <li class="sub-step-content">Click the 
             <button style="color: white; background-color: rgb(90, 102, 139); border-radius: 5px; padding: 3px;">
               <b style="padding: 50px 50px 0;"><u>Submit</u></b> 
@@ -602,16 +803,23 @@
           </li>
           <img  src="assets/Step4.3.5.jpeg" alt="submit button" class="step-image">
         </ol>
+
+        <!------------------------------------------
+        ------ Content Container for Step 4.4 ------
+        ------------------------------------------->
         <div class="sub-step-header">
           <span class="sub-step-number">4.4</span>
           <h3 class="sub-step-title">Transaction Approval</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 4.4.1 -->
           <li class="sub-step-content">Your preferred wallet will display a transaction user interface asking for you to approve the transaction initiated by clicking the 
             <button style="color: white; background-color: rgb(90, 102, 139); border-radius: 5px; padding: 3px;">
               <b style="padding: 50px 50px 0;"><u>Submit</u></b> 
             </button> button in the previous step (You must pay a small fee to add data to the Avalanche C-Chain).
           </li>
+
+          <!-- Step 4.4.2 -->
           <li class="sub-step-content">Click the 
             <button style="color: black; background-color: white; border-radius: 15px; padding: 5px;">
               <b style="padding: 30px 30px 0;"><u>Approve</u></b> 
@@ -630,31 +838,46 @@
         <h2 class="step-title">Deploy .avax Domain</h2>
       </div>
 
-      <!-- Content Container for Step 5 -->
+      <!------------------------------------------
+      ------ Content Container for Step 5.1 ------
+      ------------------------------------------->
       <div class="content-container">
         <div class="sub-step-header">
           <span class="sub-step-number">5.1</span>
           <h3 class="sub-step-title">Return to Fleek Settings</h3>
         </div>
         <ol class="sub-step-content">
+          <!-- Step 5.1.1 -->
           <li class="sub-step-content" id="5.1.1">Go back to the Fleek site where you should still see the window from <a href="#3.5.6"><b><u>Step 3.5.6</u></b></a>.</li>
+          
+          <!-- Step 5.1.2 -->
           <li class="sub-step-content">Click the 
             <button style="color: rgb(255, 217, 0); background-color: rgb(59, 57, 0); border-radius: 5px; padding: 5px;">
               <b><u>Ok, I have added it</u></b> 
             </button> button.
           </li>
           <img  src="assets/Step5.1.2.jpeg" alt="added it button" class="step-image">
+
+          <!-- Step 5.1.3 -->
           <li class="sub-step-content">It will begin to verify the management request.</li>
+
+          <!-- Step 5.1.4 -->
           <li class="sub-step-content">Once verification has finished you should see a small, green <b style="background-color: darkgreen; color: rgb(0, 255, 0); border-radius: 10px; padding: 5px;">Active</b> sign next to the respected domain.</li>
           <img  src="assets/Step5.1.4.jpeg" alt="green active sign" class="step-image">
+
+          <!-- Step 5.1.5 -->
           <li class="sub-step-content">Click the three dots to the right of the <b style="background-color: darkgreen; color: rgb(0, 255, 0); border-radius: 10px; padding: 5px;">Active</b> sign and a menu displays under it.</li>
           <img  src="assets/Step5.1.5.jpeg" alt="click the three dots" class="step-image">
+
+          <!-- Step 5.1.6 -->
           <li class="sub-step-content">Click the 
             <button style="color: white; background-color: black; border-radius: 5px; padding: 5px;">
               <b><u>Visit</u></b><i class="fas fa-arrow-up-right-from-square" style="font-size: 12px; padding-left: 50px;"></i> 
             </button> button. Your website should load in a new tab.
           </li>
           <img  src="assets/Step5.1.6.jpeg" alt="click visit button" class="step-image">
+
+          <!-- Step 5.1.7 -->
           <li class="sub-step-content">You have just deployed your first <code style="color:#E84142; font-size: larger;">.avax</code> domain!</li>
         </ol>
       </div>
@@ -662,13 +885,12 @@
 
   </main>
 
-<!-- JavaScript for Share Button -->
-<script>
-  
+  <!-- JavaScript for Share Button -->
+  <script>
     function sharePage() {
       if (navigator.share) {
         navigator.share({
-          title: 'Avvy Terminal',
+          title: 'Avvy Shell',
           url: window.location.href
         }).catch(error => console.log('Error sharing', error));
       } else {
@@ -678,28 +900,27 @@
 
     // JavaScript to scroll to the top of the page
     document.addEventListener("DOMContentLoaded", () => {
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-    // Show button when scrolled down
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 2500) {
-        scrollTopBtn.style.display = "block";
-      } else {
-        scrollTopBtn.style.display = "none";
-      }
+      // Show button when scrolled down
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 2500) {
+          scrollTopBtn.style.display = "block";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      });
+
+      // Scroll to the top when button is clicked
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
     });
+  </script>
 
-    // Scroll to the top when button is clicked
-    scrollTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  });
-</script>
-
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn" class="scroll-top-btn">
-  <img src="assets/avvy-button.PNG" alt="Scroll to Top" class="scroll-top-image">
-</button>
-
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <img src="assets/avvy-button.PNG" alt="Scroll to Top" class="scroll-top-image">
+  </button>
 </body>
 </html>
