@@ -1,4 +1,8 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
 /* Universal Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lexend', sans-serif;
   line-height: 1.6;
   color: #fff; /* Contrast color for text */
   background-color: #242323; /* Slightly darker gray background */
@@ -31,7 +35,7 @@ h1 {
 
 /* Banner Image Style */
 .banner-image {
-  width: 80%; /* width to match text */
+  width: 52%; /* width to match text */
   height: auto;
   margin: 20px 0;
 }
